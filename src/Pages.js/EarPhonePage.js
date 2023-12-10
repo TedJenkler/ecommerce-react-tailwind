@@ -5,16 +5,14 @@ import speaker from "../Img/speakers.png"
 import earphones from "../Img/earphones.png"
 import BestInfo from "../Components.js/BestInfo"
 import ProductLink from "../Components.js/ProductLink"
-import zx9 from "../Img/ZX9.png"
-import zx7 from "../Img/ZX7.png"
+import yx1 from "../Img/yx1.png"
 
-const SpeakerPage = () => {
+const EarPhonePage = () => {
     return (<>
-        <SubHeader h1="Speakers" />
+        <SubHeader h1="EARPHONES" />
         <main>
         <div className="flex flex-col items-center">
-            <ProductLink img={zx9} h11="ZX9" h12="SPEAKER" p="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups." />
-            <ProductLink img={zx7} h11="ZX7" h12="SPEAKER" p="Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use." />
+            <ProductLink img={yx1} h11="YX1 WIRELESS" h12="EARPHONES" p="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature." />
         </div>
             <section className="flex flex-col items-center mb-32">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
@@ -29,4 +27,4 @@ const SpeakerPage = () => {
     )
 }
 
-export default SpeakerPage
+export default EarPhonePage

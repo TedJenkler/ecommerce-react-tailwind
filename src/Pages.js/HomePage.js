@@ -22,7 +22,7 @@ const HomePage = () => {
             <section className="flex flex-col items-center mb-32">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
                 <LinkItem img={speaker} h2="SPEAKERS" link="/speakers" />
-                <LinkItem img={earphones} h2="EARPHONES" />
+                <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />
             </section>
             <div className="flex flex-col items-center">
             <section className="bg-darkorange w-11/12 flex flex-col items-center text-center pt-12 rounded-lg pb-14 mb-6 circlebg bg-top bg-no-repeat">

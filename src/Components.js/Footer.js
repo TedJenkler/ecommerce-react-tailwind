@@ -14,7 +14,7 @@ const Footer = () => {
                 <Link to="/"><li>HOME</li></Link>
                 <Link to="/Headphones"><li>HEADPHONES</li></Link>
                 <Link to="/Speakers"><li>SPEAKERS</li></Link>
-                <li>EARPHONES</li>
+                <Link to="/Earphones"><li>EARPHONES</li></Link>
             </ul>
             <p className="mb-12 text-bordergrey mx-6">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
             <p className="mb-12 text-bordergrey">Copyright 2021. All Rights Reserved</p>
