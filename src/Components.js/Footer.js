@@ -2,16 +2,17 @@ import logo from "../Img/audiophile 2.svg"
 import facebook from "../Img/facebook.svg"
 import twitter from "../Img/twitter.svg"
 import instagram from "../Img/instagram.svg"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
         <>
         <footer className="relative bg-black1 text-white flex flex-col items-center text-center pt-12 pb-10">
             <div className="absolute top-0 bg-darkorange w-24 h-1"></div>
-            <img className="mb-12" src={logo} alt="footerlogo" />
+            <Link to="/"><img className="mb-12" src={logo} alt="footerlogo" /></Link>
             <ul className="flex flex-col gap-4 mb-12">
-                <li>HOME</li>
-                <li>HEADPHONES</li>
+                <Link to="/"><li>HOME</li></Link>
+                <Link to="/Headphones"><li>HEADPHONES</li></Link>
                 <li>SPEAKERS</li>
                 <li>EARPHONES</li>
             </ul>

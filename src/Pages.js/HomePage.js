@@ -5,6 +5,7 @@ import earphones from "../Img/earphones.png"
 import speakerx200 from "../Img/speaker-200px.png"
 import earphoneimg from "../Img/earphonesimg.png"
 import BestInfo from "../Components.js/BestInfo"
+import { Link } from "react-router-dom"
 
 const HomePage = () => {
     return (
@@ -19,7 +20,7 @@ const HomePage = () => {
         </header>
         <main>
             <section className="flex flex-col items-center mb-32">
-                <LinkItem img={headphones} h2="HEADPHONES" />
+                <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
                 <LinkItem img={speaker} h2="SPEAKERS" />
                 <LinkItem img={earphones} h2="EARPHONES" />
             </section>
@@ -41,7 +42,7 @@ const HomePage = () => {
                 <section className="w-11/12 mb-32">
                     <img className="w-full mb-6" src={earphoneimg} alt="Earphones" />
                     <div className="bg-greywhite py-10">
-                        <h1 className="ml-6 mb-8">ZX7 SPEAKER</h1>
+                        <h1 className="ml-6 mb-8">YX1 EARPHONES</h1>
                         <button className="ml-6 border-black2 border py-3 px-8">SEE PRODUCT</button>
                     </div>
                 </section>
