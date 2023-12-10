@@ -5,3 +5,11 @@
 .hero {
   background-image: url(./Img/Bitmap.png);
 }
+
+.circlebg {
+  background-image: url(./Img/circle-bg.png);
+}
+
+.speakerbg {
+  background-image: url(./Img/speaker-bg.png)
+}
