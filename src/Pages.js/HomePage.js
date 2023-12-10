@@ -1,5 +1,4 @@
 import LinkItem from "../Components.js/LinkItem"
-import Nav from "../Components.js/Nav"
 import headphones from "../Img/headphones.png"
 import speaker from "../Img/speakers.png"
 import earphones from "../Img/earphones.png"
@@ -11,7 +10,6 @@ const HomePage = () => {
     return (
         <>
         <header className="bg-black1 hero mb-10 bg-center bg-no-repeat">
-            <Nav />
             <div className="text-white text-center py-28">
                 <h2 className="mb-4 text-bordergrey text-sm tracking-[10px]">NEW PRODUCT</h2>
                 <h1 className="mb-6 text-4xl tracking-widest">XX99 Mark II HEADPHONES</h1>
