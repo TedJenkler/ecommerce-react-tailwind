@@ -5,6 +5,7 @@ import speaker from "../Img/speakers.png"
 import earphones from "../Img/earphones.png"
 import speakerx200 from "../Img/speaker-200px.png"
 import earphoneimg from "../Img/earphonesimg.png"
+import BestInfo from "../Components.js/BestInfo"
 
 const HomePage = () => {
     return (
@@ -46,6 +47,9 @@ const HomePage = () => {
                         <button className="ml-6 border-black2 border py-3 px-8">SEE PRODUCT</button>
                     </div>
                 </section>
+            </div>
+            <div className="flex flex-col items-center">
+                <BestInfo />
             </div>
         </main>
         </>
