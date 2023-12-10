@@ -21,7 +21,7 @@ const HomePage = () => {
         <main>
             <section className="flex flex-col items-center mb-32">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
-                <LinkItem img={speaker} h2="SPEAKERS" />
+                <LinkItem img={speaker} h2="SPEAKERS" link="/speakers" />
                 <LinkItem img={earphones} h2="EARPHONES" />
             </section>
             <div className="flex flex-col items-center">
