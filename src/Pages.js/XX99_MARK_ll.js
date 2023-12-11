@@ -28,7 +28,7 @@ const XX99_MARK_ll = ( {} ) => {
                 <ImgGroup img1={man} img2={itemstable} img3={headphoneclose} alt1="manwithheadphones" alt2="thingsontable" alt3="headphones close" />
             </div>
             <div className="flex flex-col items-center">
-                <Suggestion img1={suggestionxx99} alt1="xx99mark1" h21="XX99 MARK I" img2={suggestionxx59} alt2="XX59" h22="XX59" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
+                <Suggestion link1="/XX99_MARK_l" img1={suggestionxx99} alt1="xx99mark1" h21="XX99 MARK I" img2={suggestionxx59} alt2="XX59" h22="XX59" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
             </div>
             <section className="flex flex-col items-center mb-32">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
