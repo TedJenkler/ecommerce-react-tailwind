@@ -1,4 +1,4 @@
-const Product = ( {img, h11, h12, p1, price, p2, p3, b1, b2, b3, b4, b5, newp} ) => {
+const Product = ( {img, h11, h12, p, price, p2, p3, b1, b2, b3, b4, b5, newp} ) => {
     console.log(newp)
     return (
         <section className="pt-16 flex flex-col items-start text-start">
@@ -8,7 +8,7 @@ const Product = ( {img, h11, h12, p1, price, p2, p3, b1, b2, b3, b4, b5, newp} )
             {newp === true ? <h2 className="tracking-[10px] text-darkorange mb-6 text-sm ml-6">NEW PRODUCT</h2> : null}
             <h1 className="text-3xl mx-6 font-bold">{h11}</h1>
             <h1 className="text-3xl mb-6 mx-6 font-bold">{h12}</h1>
-            <p className="text-base mb-6 mx-6">{p1}</p>
+            <p className="text-base mb-6 mx-6">{p}</p>
             <p className="text-lg mb-7 mx-6 font-bold">{price}</p>
             <div>
 
