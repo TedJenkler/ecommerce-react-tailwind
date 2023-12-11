@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router';
 import HeadPhonePage from './Pages.js/HeadPhonePage';
 import SpeakerPage from './Pages.js/SpeakerPage';
 import EarPhonePage from './Pages.js/EarPhonePage';
+import XX99_MARK_ll from './Pages.js/XX99_MARK_ll'
 
 function App() {
   return (<>
@@ -15,6 +16,7 @@ function App() {
     <Route path='/Headphones' element={<HeadPhonePage />} />
     <Route path='/Speakers' element={<SpeakerPage />} />
     <Route path='/Earphones' element={<EarPhonePage />} />
+    <Route path='/XX99_MARK_ll' element={<XX99_MARK_ll />} />
     </Routes>
     <Footer />
     </>
