@@ -5,6 +5,10 @@ import { useState } from "react"
 import man from "../Img/guywithheadphones.png"
 import itemstable from "../Img/thingsontable.png"
 import headphoneclose from "../Img/close picture of headphones.png"
+import Suggestion from "../Components.js/Suggestion"
+import suggestionxx99 from "../Img/suggestionxx99mark1.png"
+import suggestionxx59 from "../Img/suggestionxx59.png"
+import suggestionzx9 from "../Img/ZX9.png"
 
 const XX99_MARK_ll = ( {} ) => {
     const [newP, setNewP] = useState(true)
@@ -19,7 +23,7 @@ const XX99_MARK_ll = ( {} ) => {
                 <ImgGroup img1={man} img2={itemstable} img3={headphoneclose} alt1="manwithheadphones" alt2="thingsontable" alt3="headphones close" />
             </div>
             <div className="flex flex-col items-center">
-                
+                <Suggestion img1={suggestionxx99} alt1="xx99mark1" h21="XX99 MARK I" img2={suggestionxx59} alt2="XX59" h22="XX59" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
             </div>
         </main>
     )
