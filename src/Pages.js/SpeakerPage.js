@@ -13,7 +13,7 @@ const SpeakerPage = () => {
         <SubHeader h1="Speakers" />
         <main>
         <div className="flex flex-col items-center">
-            <ProductLink img={zx9} h11="ZX9" h12="SPEAKER" p="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups." />
+            <ProductLink path="/zx9" img={zx9} h11="ZX9" h12="SPEAKER" p="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups." />
             <ProductLink img={zx7} h11="ZX7" h12="SPEAKER" p="Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use." />
         </div>
             <section className="flex flex-col items-center mb-32">

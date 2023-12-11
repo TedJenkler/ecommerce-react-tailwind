@@ -29,7 +29,7 @@ const HomePage = () => {
                 <img className="mb-8" src={speakerx200} alt="speaker" />
                 <h1 className="mb-6 text-4xl text-white">ZX9 <br/> SPEAKER</h1>
                 <p className="mb-6 mx-6 text-white text-base">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-                <button className="py-3 px-8 text-white bg-black2">SEE PRODUCT</button>
+                <Link to="/zx9" className="py-3 px-8 text-white bg-black2">SEE PRODUCT</Link>
             </section>
             </div>
             <div className="flex flex-col items-center">
