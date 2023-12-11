@@ -9,6 +9,11 @@ import Suggestion from "../Components.js/Suggestion"
 import suggestionxx99 from "../Img/suggestionxx99mark1.png"
 import suggestionxx59 from "../Img/suggestionxx59.png"
 import suggestionzx9 from "../Img/ZX9.png"
+import LinkItem from "../Components.js/LinkItem"
+import headphones from "../Img/headphones.png"
+import speaker from "../Img/speakers.png"
+import earphones from "../Img/earphones.png"
+import BestInfo from "../Components.js/BestInfo"
 
 const XX99_MARK_ll = ( {} ) => {
     const [newP, setNewP] = useState(true)
@@ -24,6 +29,14 @@ const XX99_MARK_ll = ( {} ) => {
             </div>
             <div className="flex flex-col items-center">
                 <Suggestion img1={suggestionxx99} alt1="xx99mark1" h21="XX99 MARK I" img2={suggestionxx59} alt2="XX59" h22="XX59" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
+            </div>
+            <section className="flex flex-col items-center mb-32">
+                <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
+                <LinkItem img={speaker} h2="SPEAKERS" link={"/speakers"} />
+                <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />
+            </section>
+            <div className="flex flex-col items-center">
+                <BestInfo />
             </div>
         </main>
     )
