@@ -16,12 +16,15 @@ import { useState} from 'react';
 import React from 'react';
 
 export const Context = React.createContext();
+export const CartContext = React.createContext();
 
 function App() {
   const [product, setProduct] = useState("");
+  const [cart, setCart] = useState([]);
   return (<>
     <Nav />
     <Context.Provider value={[product, setProduct]}>
+    <CartContext.Provider value={[cart, setCart]}>
     <Routes>
       <Route index path='/' element={<HomePage />} />
       <Route path='/Headphones' element={<HeadPhonePage />} />
@@ -34,6 +37,7 @@ function App() {
       <Route path='/ZX7' element={<ZX7 />} />
       <Route path='/yx1' element={<YX1 />} />
     </Routes>
+    </CartContext.Provider>
     </Context.Provider>
     <Footer />
     </>

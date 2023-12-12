@@ -1,13 +1,17 @@
-import { useContext, useEffect, useState } from "react"
-import { Context } from "../App";
+import { useContext, useState } from "react"
+import { Context } from "../App"
+import { CartContext } from "../App";
 
 const AddToCart = () => {
     const [cartCount, setCartCount] = useState(0);
     const [product, setProduct] = useContext(Context)
-    const [cart, setCart] = useState({value: {type : product, amount : cartCount}})
+    const [cart, setCart] = useContext(CartContext)
+    const [localCart, setLocalCart] = useState({value: {type : product, amount : cartCount}})
 
         const  addcart = () => {
-            setCart({...cart, value: {type : product, amount : cartCount}})
+            setLocalCart({...localCart, value: {type : product, amount : cartCount}})
+            console.log(localCart)
+            setCart(cart => [...cart,localCart] );
             console.log(cart)
         }
     return (
