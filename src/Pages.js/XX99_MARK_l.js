@@ -1,7 +1,7 @@
 import ImgGroup from "../Components.js/ImgGroup"
 import Product from "../Components.js/Product"
 import XX99MARK1 from "../Img/xx99_mark_1_product.png"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import hangingheadphone from "../Img/hangingheadphone.png"
 import itemsonfloor from "../Img/itemsonthefloor.png"
 import glowingheadphones from "../Img/glowingheadphones.png"
@@ -14,8 +14,10 @@ import headphones from "../Img/headphones.png"
 import speaker from "../Img/speakers.png"
 import earphones from "../Img/earphones.png"
 import BestInfo from "../Components.js/BestInfo"
+import { Context } from "../App"
 
-const XX99_MARK_l = ( {product, setProduct} ) => {
+const XX99_MARK_l = () => {
+    const [product, setProduct] = useContext(Context)
     const [newP, setNewP] = useState(false)
     useEffect(() => {
         setProduct("XX99MARK1")

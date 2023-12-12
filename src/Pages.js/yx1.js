@@ -1,7 +1,7 @@
 import ImgGroup from "../Components.js/ImgGroup"
 import Product from "../Components.js/Product"
 import yx1 from "../Img/yx1_product.png"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import earphonelose from "../Img/earphonelose.png"
 import chargingearphones from "../Img/chargingearphones.png"
 import earphonecase from "../Img/earphonecase.png"
@@ -14,9 +14,11 @@ import headphones from "../Img/headphones.png"
 import speaker from "../Img/speakers.png"
 import earphones from "../Img/earphones.png"
 import BestInfo from "../Components.js/BestInfo"
+import { Context } from "../App"
 
-const YX1 = ( {product, setProduct} ) => {
+const YX1 = () => {
     const [newP, setNewP] = useState(true)
+    const [product, setProduct] = useContext(Context)
     useEffect(() => {
         setProduct("YX1")
         console.log(product)

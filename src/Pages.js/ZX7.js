@@ -1,7 +1,7 @@
 import ImgGroup from "../Components.js/ImgGroup"
 import Product from "../Components.js/Product"
 import zx7 from "../Img/ZX7_product.png"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import closespeakerblack from "../Img/closeofblackspeaker.png"
 import speakerroom from "../Img/speakerroom.png"
 import speakerontable from "../Img/speakerontable.png"
@@ -14,9 +14,11 @@ import headphones from "../Img/headphones.png"
 import speaker from "../Img/speakers.png"
 import earphones from "../Img/earphones.png"
 import BestInfo from "../Components.js/BestInfo"
+import { Context } from "../App"
 
-const ZX7 = ( {product, setProduct} ) => {
+const ZX7 = () => {
     const [newP, setNewP] = useState(false)
+    const [product, setProduct] = useContext(Context)
 
     useEffect(() => {
         setProduct("ZX7")
