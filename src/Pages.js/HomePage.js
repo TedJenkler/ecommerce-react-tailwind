@@ -43,7 +43,7 @@ const HomePage = () => {
                     <img className="w-full mb-6" src={earphoneimg} alt="Earphones" />
                     <div className="bg-greywhite py-10">
                         <h1 className="ml-6 mb-8">YX1 EARPHONES</h1>
-                        <button className="ml-6 border-black2 border py-3 px-8">SEE PRODUCT</button>
+                        <Link to="/yx1" className="ml-6 border-black2 border py-3 px-8">SEE PRODUCT</Link>
                     </div>
                 </section>
             </div>

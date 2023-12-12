@@ -11,6 +11,7 @@ import XX99_MARK_l from './Pages.js/XX99_MARK_l'
 import XX59 from './Pages.js/XX59';
 import ZX9 from './Pages.js/ZX9';
 import ZX7 from './Pages.js/ZX7';
+import YX1 from './Pages.js/yx1'
 
 function App() {
   return (<>
@@ -25,6 +26,7 @@ function App() {
       <Route path='/XX59' element={<XX59 />} />
       <Route path='/ZX9' element={<ZX9 />} />
       <Route path='/ZX7' element={<ZX7 />} />
+      <Route path='/yx1' element={<YX1 />} />
     </Routes>
     <Footer />
     </>

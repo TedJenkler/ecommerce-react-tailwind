@@ -15,7 +15,7 @@ import speaker from "../Img/speakers.png"
 import earphones from "../Img/earphones.png"
 import BestInfo from "../Components.js/BestInfo"
 
-const ZX9 = ( {} ) => {
+const ZX7 = ( {} ) => {
     const [newP, setNewP] = useState(false)
     return (
         <main>
@@ -43,4 +43,4 @@ const ZX9 = ( {} ) => {
     )
 }
 
-export default ZX9
+export default ZX7
