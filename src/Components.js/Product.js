@@ -1,7 +1,10 @@
+import BackBtn from "./BackBtn"
+
 const Product = ( {img, h11, h12, p, price, p2, p3, b1, b2, b3, b4, b5, newp} ) => {
     console.log(newp)
-    return (
-        <section className="pt-16 flex flex-col items-start text-start">
+    return (<>
+        <BackBtn />
+        <section className="flex flex-col items-start text-start">
             <div className="flex flex-col items-center w-full">
                 <img className="mb-8" src={img} alt={h11} />
             </div>
@@ -25,7 +28,7 @@ const Product = ( {img, h11, h12, p, price, p2, p3, b1, b2, b3, b4, b5, newp} ) 
                 <li>{b5}</li>
             </ul>
         </section>
-    )
+        </>)
 }
 
 export default Product
