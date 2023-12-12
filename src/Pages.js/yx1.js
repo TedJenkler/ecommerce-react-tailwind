@@ -1,7 +1,7 @@
 import ImgGroup from "../Components.js/ImgGroup"
 import Product from "../Components.js/Product"
 import yx1 from "../Img/yx1_product.png"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import earphonelose from "../Img/earphonelose.png"
 import chargingearphones from "../Img/chargingearphones.png"
 import earphonecase from "../Img/earphonecase.png"
@@ -15,8 +15,12 @@ import speaker from "../Img/speakers.png"
 import earphones from "../Img/earphones.png"
 import BestInfo from "../Components.js/BestInfo"
 
-const YX1 = ( {} ) => {
+const YX1 = ( {product, setProduct} ) => {
     const [newP, setNewP] = useState(true)
+    useEffect(() => {
+        setProduct("YX1")
+        console.log(product)
+    },)
     return (
         <main>
             <Product img={yx1} h11="YX1 WIRELESS" h12="EARPHONES"

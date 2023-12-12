@@ -12,8 +12,11 @@ import XX59 from './Pages.js/XX59';
 import ZX9 from './Pages.js/ZX9';
 import ZX7 from './Pages.js/ZX7';
 import YX1 from './Pages.js/yx1'
+import { useState } from 'react';
 
 function App() {
+
+  const [product, setProduct] = useState("");
   return (<>
     <Nav />
     <Routes>
@@ -21,12 +24,12 @@ function App() {
       <Route path='/Headphones' element={<HeadPhonePage />} />
       <Route path='/Speakers' element={<SpeakerPage />} />
       <Route path='/Earphones' element={<EarPhonePage />} />
-      <Route path='/XX99_MARK_ll' element={<XX99_MARK_ll />} />
-      <Route path='/XX99_MARK_l' element={<XX99_MARK_l />} />
-      <Route path='/XX59' element={<XX59 />} />
-      <Route path='/ZX9' element={<ZX9 />} />
-      <Route path='/ZX7' element={<ZX7 />} />
-      <Route path='/yx1' element={<YX1 />} />
+      <Route path={'/XX99_MARK_ll'} element={<XX99_MARK_ll product={product} setProduct={setProduct} />} />
+      <Route path='/XX99_MARK_l' element={<XX99_MARK_l product={product} setProduct={setProduct} />} />
+      <Route path='/XX59' element={<XX59 product={product} setProduct={setProduct} />} />
+      <Route path='/ZX9' element={<ZX9 product={product} setProduct={setProduct} />} />
+      <Route path='/ZX7' element={<ZX7 product={product} setProduct={setProduct} />} />
+      <Route path='/yx1' element={<YX1 product={product} setProduct={setProduct} />} />
     </Routes>
     <Footer />
     </>
