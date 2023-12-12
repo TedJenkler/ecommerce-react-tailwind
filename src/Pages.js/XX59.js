@@ -29,7 +29,7 @@ const XX59 = ( {} ) => {
                 <ImgGroup img1={woman} img2={bookandheadphones} img3={lightheadphones} alt1="hangingheadphones" alt2="thingsonfloor" alt3="glowingheadphones" />
             </div>
             <div className="flex flex-col items-center">
-                <Suggestion link1="/XX99_MARK_ll" link2="/XX99_MARK_l" img1={suggestionxx99} alt1="xx99mark2" h21="XX99 MARK II" img2={suggestionxx99mark1} alt2="XX99" h22="XX99 MARK I" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
+                <Suggestion link1="/XX99_MARK_ll" link2="/XX99_MARK_l" link3="/zx9" img1={suggestionxx99} alt1="xx99mark2" h21="XX99 MARK II" img2={suggestionxx99mark1} alt2="XX99" h22="XX99 MARK I" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
             </div>
             <section className="flex flex-col items-center mb-32">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />

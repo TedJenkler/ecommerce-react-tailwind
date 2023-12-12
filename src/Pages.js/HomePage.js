@@ -35,7 +35,7 @@ const HomePage = () => {
             <div className="flex flex-col items-center">
                 <section className="py-24 bg-greywhite w-11/12 speakerbg bg-right bg-no-repeat bg-cover mb-6">
                     <h1 className="ml-6 mb-8">ZX7 SPEAKER</h1>
-                    <button className="ml-6 border-black2 border py-3 px-8">SEE PRODUCT</button>
+                    <Link to="/zx7" className="ml-6 border-black2 border py-3 px-8">SEE PRODUCT</Link>
                 </section>
             </div>
             <div className="flex flex-col items-center">
