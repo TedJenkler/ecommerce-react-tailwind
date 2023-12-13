@@ -18,12 +18,21 @@ import { Context } from "../App"
 
 const ZX7 = () => {
     const [newP, setNewP] = useState(false)
-    const [product, setProduct] = useContext(Context)
+    const [state, dispatch] = useContext(Context)
 
     useEffect(() => {
-        setProduct("ZX7")
-        console.log(product)
-    },)
+        dispatch({ type: 'update_product_img',
+        payload: "../Img/ZX7_product.png"
+    });
+        dispatch({ type: 'update_product_product',
+        payload: "ZX7"
+    });
+        dispatch({ type: 'update_product_cost',
+        payload: "$ 3,500"
+    });
+        console.log(state)
+    },[])
+
     return (
         <main>
             <Product img={zx7} h11="ZX7" h12="SPEAKER"

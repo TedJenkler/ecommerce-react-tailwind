@@ -1,8 +1,9 @@
 import { CartContext } from "../App";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 const Cart = () => {
     const [cart, setCart] = useContext(CartContext)
+    const [render, setRender] = useState();
 
     const emptyCart = () => {
         if(cart.length > 0){
@@ -17,6 +18,15 @@ const Cart = () => {
                     <h1>CART</h1><h1>({cart.length})</h1>
                 </div>
                     <button onClick={emptyCart}>Remove all</button>
+            </div>
+            <div>
+                {cart.map((item) => {
+                    return (<>
+                    <img src={item.value.img} alt={item.value.type} />
+                    <h1>{item.value.type}</h1>
+                    <h1>{item.value.amount}</h1>
+                    </>)
+                })}
             </div>
         </section>
     )

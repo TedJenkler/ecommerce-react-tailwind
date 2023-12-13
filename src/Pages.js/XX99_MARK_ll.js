@@ -18,12 +18,20 @@ import { Context } from "../App"
 
 const XX99_MARK_ll = () => {
     const [newP, setNewP] = useState(true)
-    const [product, setProduct] = useContext(Context)
+    const [state, dispatch] = useContext(Context)
 
     useEffect(() => {
-        setProduct("XX99MARK2")
-        console.log(product)
-    },)
+        dispatch({ type: 'update_product_img',
+        payload: "../Img/xx99_mark_2_product.png"
+    });
+        dispatch({ type: 'update_product_product',
+        payload: "XX99_MARK_II"
+    });
+        dispatch({ type: 'update_product_cost',
+        payload: "$ 2,999"
+    });
+        console.log(state)
+    },[])
     return (
         <main>
             <Product img={XX99MARK2} h11="XX99 Mark II" h12="Headphones"

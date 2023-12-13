@@ -12,7 +12,7 @@ import XX59 from './Pages.js/XX59';
 import ZX9 from './Pages.js/ZX9';
 import ZX7 from './Pages.js/ZX7';
 import YX1 from './Pages.js/yx1'
-import { useState} from 'react';
+import { useReducer, useState} from 'react';
 import React from 'react';
 import Cart from './Pages.js/Cart';
 
@@ -20,11 +20,54 @@ export const Context = React.createContext();
 export const CartContext = React.createContext();
 
 function App() {
+
+  function reducer(state, action) {
+    switch (action.type) {
+      case 'update_product_img': {
+        return {
+          ...state,
+          img: action.payload
+        };
+      }
+      case 'update_product_product': {
+        return {
+          ...state,
+          product: action.payload
+        };
+      }
+      case 'update_product_cost': {
+        return {
+          ...state,
+          cost: action.payload
+        };
+      }
+      case 'add_cart': {
+        return {
+          ...state,
+          cart: action.payload
+        };
+      }
+      case 'increment': {
+        return {
+          ...state,
+          cartcount: state.cartcount + 1
+        };
+      }
+      case 'decrement': {
+        return {
+          ...state,
+          cartcount: state.cartcount - 1
+        };
+      }
+    }
+  }
+
   const [product, setProduct] = useState("");
   const [cart, setCart] = useState([]);
+  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "", cost: "", cart: {}})
   return (<>
     <Nav />
-    <Context.Provider value={[product, setProduct]}>
+    <Context.Provider value={[state, dispatch]}>
     <CartContext.Provider value={[cart, setCart]}>
     <Cart />
     <Routes>

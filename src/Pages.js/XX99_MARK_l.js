@@ -17,12 +17,21 @@ import BestInfo from "../Components.js/BestInfo"
 import { Context } from "../App"
 
 const XX99_MARK_l = () => {
-    const [product, setProduct] = useContext(Context)
+    const [state, dispatch] = useContext(Context)
     const [newP, setNewP] = useState(false)
+
     useEffect(() => {
-        setProduct("XX99MARK1")
-        console.log(product)
-    },)
+        dispatch({ type: 'update_product_img',
+        payload: "../Img/xx99_mark_1_product.png"
+    });
+        dispatch({ type: 'update_product_product',
+        payload: "XX99_MARK_I"
+    });
+        dispatch({ type: 'update_product_cost',
+        payload: "$ 1,750"
+    });
+        console.log(state)
+    },[])
     return (
         <main>
             <Product img={XX99MARK1} h11="XX99 Mark I" h12="Headphones"
