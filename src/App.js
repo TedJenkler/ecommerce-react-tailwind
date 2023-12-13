@@ -14,6 +14,7 @@ import ZX7 from './Pages.js/ZX7';
 import YX1 from './Pages.js/yx1'
 import { useState} from 'react';
 import React from 'react';
+import Cart from './Pages.js/Cart';
 
 export const Context = React.createContext();
 export const CartContext = React.createContext();
@@ -25,6 +26,7 @@ function App() {
     <Nav />
     <Context.Provider value={[product, setProduct]}>
     <CartContext.Provider value={[cart, setCart]}>
+    <Cart />
     <Routes>
       <Route index path='/' element={<HomePage />} />
       <Route path='/Headphones' element={<HeadPhonePage />} />
