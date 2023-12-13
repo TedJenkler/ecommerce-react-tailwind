@@ -22,7 +22,7 @@ const XX59 = () => {
 
     useEffect(() => {
         dispatch({ type: 'update_product_img',
-        payload: "../Img/xx59_product.png"
+        payload: xx59
     });
         dispatch({ type: 'update_product_product',
         payload: "XX59"

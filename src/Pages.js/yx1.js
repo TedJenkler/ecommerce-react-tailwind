@@ -22,7 +22,7 @@ const YX1 = () => {
 
     useEffect(() => {
         dispatch({ type: 'update_product_img',
-        payload: "../Img/yx1_product.png"
+        payload: yx1
     });
         dispatch({ type: 'update_product_product',
         payload: "YX1"

@@ -22,7 +22,7 @@ const ZX9 = () => {
 
     useEffect(() => {
         dispatch({ type: 'update_product_img',
-        payload: "../Img/ZX9_product.png"
+        payload: zx9
     });
         dispatch({ type: 'update_product_product',
         payload: "ZX9"

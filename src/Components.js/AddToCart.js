@@ -14,9 +14,7 @@ const AddToCart = () => {
     }
 
     const add = () => {
-        dispatch({ type: 'add_cart',
-        payload: {img: state.img, product: state.product, cost:state.cost, amount: state.cartcount}
-    })
+        dispatch({ type: 'add_cart'})
     }
 
 
