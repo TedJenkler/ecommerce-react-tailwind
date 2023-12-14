@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Context } from "../App"
 import { CartContext } from "../App";
 
@@ -16,6 +16,27 @@ const AddToCart = () => {
     const add = () => {
         dispatch({ type: 'add_cart'})
     }
+
+    useEffect(() => {
+        dispatch({type: 'totalbeforetax',
+        payload: total
+    })
+    console.log(state.total)
+    },[state.cart])
+
+    const calctotal = () => {
+        let total = 0
+        Object.entries(state.cart).forEach(([key, value]) => {
+            let test = value
+            let it = Object.values(test)
+            let number = it[2]
+            let amount = it[3]
+            total += number * amount
+          });
+          return total
+    }
+
+    let total = calctotal()
 
 
     return (
