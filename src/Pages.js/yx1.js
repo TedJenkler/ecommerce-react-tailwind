@@ -28,7 +28,7 @@ const YX1 = () => {
         payload: "YX1"
     });
         dispatch({ type: 'update_product_cost',
-        payload: "$ 599"
+        payload: 599
     });
         console.log(state)
     },[])

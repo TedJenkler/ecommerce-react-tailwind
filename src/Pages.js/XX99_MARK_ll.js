@@ -28,7 +28,7 @@ const XX99_MARK_ll = () => {
         payload: "XX99_MARK_II"
     });
         dispatch({ type: 'update_product_cost',
-        payload: "$ 2,999"
+        payload: 2999
     });
     },[])
     return (

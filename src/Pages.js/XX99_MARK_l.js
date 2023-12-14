@@ -28,7 +28,7 @@ const XX99_MARK_l = () => {
         payload: "XX99_MARK_I"
     });
         dispatch({ type: 'update_product_cost',
-        payload: "$ 1,750"
+        payload: 1750
     });
         console.log(state)
     },[])

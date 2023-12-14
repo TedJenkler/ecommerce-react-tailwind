@@ -28,7 +28,7 @@ const ZX7 = () => {
         payload: "ZX7"
     });
         dispatch({ type: 'update_product_cost',
-        payload: "$ 3,500"
+        payload: 3500
     });
         console.log(state)
     },[])

@@ -16,30 +16,51 @@ const Cart = () => {
                 <img className="h-16 w-16 rounded-lg" src={items.img} alt={items.product} />
                 <div className="flex flex-col justify-around">
                     <h1 className="text-base font-bold">{items.product}</h1>
-                    <p className="text-bordergrey text-sm">{items.cost}</p>
+                    <p className="text-bordergrey text-sm">$ {items.cost}</p>
                 </div>
                 </div>)
         }))
     }
-    let count = 0
 
+    const calculatecosttotal = () => {
+        let total = 0
+        Object.entries(state.cart).forEach(([key, value]) => {
+            let test = value
+            let it = Object.values(test)
+            let number = it[2]
+            total += number
+          });
+          return total
+        }
+
+    const calculateamount = () => {
+    let count = 0
     Object.entries(state.cart).forEach(([key, value]) => {
         let test = value
         let it = Object.values(test)
         let number = it[3]
         count += number
       });
+      return count
+    }
 
     return (
-        <section className="bg-white py-8 px-7 w-11/12">
+        <section className="bg-white py-8 px-7 w-11/12 rounded-lg">
             <div className="flex justify-between mb-8">
                 <div className="flex items-center">
-                    <h1 className="text-lg font-bold">CART</h1><h1 className="text-lg font-bold">({count})</h1>
+                    <h1 className="text-lg font-bold">CART</h1><h1 className="text-lg font-bold">({calculateamount()})</h1>
                 </div>
                     <button className="underline text-bordergrey" onClick={emptyCart}>Remove all</button>
             </div>
             <div>
                 {render()}
+            </div>
+            <div className="flex justify-between mb-6">
+                <p className="text-base text-bordergrey">TOTAL</p>
+                <p className="text-lg font-bold">$ { calculatecosttotal()}</p>
+            </div>
+            <div className="flex justify-center items-center">
+            <button className="bg-darkorange text-white py-4 w-full text-xs">CHECKOUT</button>
             </div>
         </section>
     )
