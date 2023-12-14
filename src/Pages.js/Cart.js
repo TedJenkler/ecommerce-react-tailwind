@@ -1,5 +1,6 @@
 import { Context } from "../App";
-import { useContext, useState } from "react";
+import { useContext} from "react";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
     const [state, dispatch] = useContext(Context)
@@ -45,7 +46,7 @@ const Cart = () => {
     }
 
     return (
-        <section className="bg-white py-8 px-7 w-11/12 rounded-lg">
+        <section className="hidden bg-white py-8 px-7 w-11/12 rounded-lg">
             <div className="flex justify-between mb-8">
                 <div className="flex items-center">
                     <h1 className="text-lg font-bold">CART</h1><h1 className="text-lg font-bold">({calculateamount()})</h1>
@@ -60,7 +61,7 @@ const Cart = () => {
                 <p className="text-lg font-bold">$ { calculatecosttotal()}</p>
             </div>
             <div className="flex justify-center items-center">
-            <button className="bg-darkorange text-white py-4 w-full text-xs">CHECKOUT</button>
+            <Link to="/checkout" className="bg-darkorange text-white py-4 w-full text-xs">CHECKOUT</Link>
             </div>
         </section>
     )

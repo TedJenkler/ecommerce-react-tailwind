@@ -15,6 +15,7 @@ import YX1 from './Pages.js/yx1'
 import { useReducer, useState} from 'react';
 import React from 'react';
 import Cart from './Pages.js/Cart';
+import CheckOut from './Pages.js/CheckOut';
 
 export const Context = React.createContext();
 export const CartContext = React.createContext();
@@ -87,6 +88,7 @@ function App() {
       <Route path='/ZX9' element={<ZX9 />} />
       <Route path='/ZX7' element={<ZX7 />} />
       <Route path='/yx1' element={<YX1 />} />
+      <Route path='/checkout' element={<CheckOut />} />
     </Routes>
     </CartContext.Provider>
     </Context.Provider>
