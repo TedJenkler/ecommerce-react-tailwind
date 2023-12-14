@@ -66,12 +66,18 @@ function App() {
           cartcount: state.cartcount - 1
         };
       }
+      case 'totalbeforetax': {
+        return {
+          ...state,
+          total: action.payload
+        };
+      }
     }
   }
 
   const [product, setProduct] = useState("");
   const [cart, setCart] = useState([]);
-  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: []})
+  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: [], total: 0})
   return (<>
     <Nav />
     <Context.Provider value={[state, dispatch]}>

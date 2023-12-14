@@ -29,7 +29,8 @@ const Cart = () => {
             let test = value
             let it = Object.values(test)
             let number = it[2]
-            total += number
+            let amount = it[3]
+            total += number * amount
           });
           return total
         }
@@ -46,7 +47,7 @@ const Cart = () => {
     }
 
     return (
-        <section className="hidden bg-white py-8 px-7 w-11/12 rounded-lg">
+        <section className="bg-white py-8 px-7 w-11/12 rounded-lg">
             <div className="flex justify-between mb-8">
                 <div className="flex items-center">
                     <h1 className="text-lg font-bold">CART</h1><h1 className="text-lg font-bold">({calculateamount()})</h1>

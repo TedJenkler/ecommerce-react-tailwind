@@ -1,10 +1,11 @@
 import BackBtn from "../Components.js/BackBtn"
+import Summary from "../Components.js/Summary"
 
 const CheckOut = () => {
     return (<section className="bg-greywhite">
     <BackBtn />
     <div className="flex items-center justify-center">
-        <form className="flex flex-col w-11/12 p-6 bg-white rounded-lg">
+        <form className="flex flex-col w-11/12 p-6 bg-white rounded-lg mb-8">
             <h1 className="text-3xl font-bold mb-8">CHECKOUT</h1>
             <p className="text-darkorange text-sm mb-4">Billing details</p>
             <label className="mb-2 text-xs font-bold" htmlFor="name">Name</label>
@@ -38,6 +39,7 @@ const CheckOut = () => {
             <input className="py-4 pl-6 mb-6 border border-bordergrey rounded-lg" placeholder="6891"></input>
         </form>
     </div>
+        <Summary />
         </section>)
 }
 
