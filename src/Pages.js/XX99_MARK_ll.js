@@ -30,7 +30,6 @@ const XX99_MARK_ll = () => {
         dispatch({ type: 'update_product_cost',
         payload: "$ 2,999"
     });
-        console.log(state)
     },[])
     return (
         <main>
