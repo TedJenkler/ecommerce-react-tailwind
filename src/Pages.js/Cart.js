@@ -49,7 +49,7 @@ const Cart = () => {
                 <p className="text-lg font-bold">$ {state.total}</p>
             </div>
             <div className="flex justify-center items-center">
-            <Link to="/checkout" className="bg-darkorange text-white py-4 w-full text-xs flex items-center justify-center">CHECKOUT</Link>
+            <Link onClick={(e) => {dispatch({type: 'togglecart', payload: true})}} to="/checkout" className="bg-darkorange text-white py-4 w-full text-xs flex items-center justify-center">CHECKOUT</Link>
             </div>
         </section>
     )

@@ -1,9 +1,11 @@
 import BackBtn from "../Components.js/BackBtn"
+import Conformation from "../Components.js/Conformation"
 import Summary from "../Components.js/Summary"
 
 const CheckOut = () => {
     return (<section className="bg-greywhite">
     <BackBtn />
+    <Conformation />
     <div className="flex items-center justify-center">
         <form className="flex flex-col w-11/12 p-6 bg-white rounded-lg mb-8">
             <h1 className="text-3xl font-bold mb-8">CHECKOUT</h1>
