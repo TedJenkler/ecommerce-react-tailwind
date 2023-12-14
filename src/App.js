@@ -46,6 +46,7 @@ function App() {
         return {
           ...state,
           cart: [...state.cart, {img: state.img, product: state.product, cost:state.cost, amount: state.cartcount}],
+          cartcount: 0
         };
       }
       case 'clear_cart': {

@@ -21,7 +21,6 @@ const AddToCart = () => {
         dispatch({type: 'totalbeforetax',
         payload: total
     })
-    console.log(state.total)
     },[state.cart])
 
     const calctotal = () => {
