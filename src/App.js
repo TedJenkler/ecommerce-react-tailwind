@@ -52,7 +52,7 @@ function App() {
       case 'clear_cart': {
         return {
           ...state,
-          cart: {}
+          cart: []
         };
       }
       case 'increment': {
@@ -73,15 +73,22 @@ function App() {
           total: action.payload
         };
       }
+      case 'togglecart': {
+        return {
+          ...state,
+          togglecart: action.payload
+        };
+      }
     }
   }
 
   const [product, setProduct] = useState("");
   const [cart, setCart] = useState([]);
-  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: [], total: 0})
+  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: [], total: 0, togglecart: true})
   return (<>
-    <Nav />
+
     <Context.Provider value={[state, dispatch]}>
+    <Nav />
     <CartContext.Provider value={[cart, setCart]}>
     <Cart />
     <Routes>

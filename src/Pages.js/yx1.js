@@ -33,7 +33,7 @@ const YX1 = () => {
         console.log(state)
     },[])
     return (
-        <main>
+        <main className={state.togglecart === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>
             <Product img={yx1} h11="YX1 WIRELESS" h12="EARPHONES"
             p="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature." 
             price="$ 599"

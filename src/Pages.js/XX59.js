@@ -33,7 +33,7 @@ const XX59 = () => {
         console.log(state)
     },[])
     return (
-        <main>
+        <main className={state.togglecart === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>
             <Product img={xx59} h11="XX59" h12="Headphones"
             p="Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move."
             price="$ 899"
