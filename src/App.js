@@ -73,6 +73,12 @@ function App() {
           total: action.payload
         };
       }
+      case 'totalamount': {
+        return {
+          ...state,
+          amount: action.payload
+        };
+      }
       case 'togglecart': {
         return {
           ...state,

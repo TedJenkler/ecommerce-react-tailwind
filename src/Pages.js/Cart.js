@@ -22,22 +22,11 @@ const Cart = () => {
         }))
     }
 
-    const calculateamount = () => {
-    let count = 0
-    Object.entries(state.cart).forEach(([key, value]) => {
-        let test = value
-        let it = Object.values(test)
-        let number = it[3]
-        count += number
-      });
-      return count
-    }
-
     return (
         <section className={state.togglecart === true ? "hidden bg-white py-8 px-7 w-11/12 rounded-lg absolute" : "bg-white py-8 px-7 w-11/12 rounded-lg absolute mx-auto left-0 right-0 top-28 z-50"}>
             <div className="flex justify-between mb-8">
                 <div className="flex items-center">
-                    <h1 className="text-lg font-bold">CART</h1><h1 className="text-lg font-bold">({calculateamount()})</h1>
+                    <h1 className="text-lg font-bold">CART</h1><h1 className="text-lg font-bold">({state.amount})</h1>
                 </div>
                     <button className="underline text-bordergrey" onClick={emptyCart}>Remove all</button>
             </div>

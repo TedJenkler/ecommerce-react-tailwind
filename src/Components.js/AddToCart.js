@@ -23,6 +23,12 @@ const AddToCart = () => {
     })
     },[state.cart])
 
+    useEffect(() => {
+        dispatch({type: 'totalamount',
+        payload: count
+    })
+    },[state.cart])
+
     const calctotal = () => {
         let total = 0
         Object.entries(state.cart).forEach(([key, value]) => {
@@ -37,6 +43,18 @@ const AddToCart = () => {
 
     let total = calctotal()
 
+    const calculateamount = () => {
+        let count = 0
+        Object.entries(state.cart).forEach(([key, value]) => {
+            let test = value
+            let it = Object.values(test)
+            let number = it[3]
+            count += number
+          });
+          return count
+        }
+
+    let count = calculateamount()
 
     return (
         <div className="flex gap-4 mb-20 ml-6">
