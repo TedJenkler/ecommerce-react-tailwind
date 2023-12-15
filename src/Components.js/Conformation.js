@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom"
 import check from "../Img/check.png"
 import { Context } from "../App"
-import { useContext } from "react"
+import { useContext} from "react"
 
-const Conformation = () => {
+const Conformation = ( {toggle} ) => {
     const [state, dispatch] = useContext(Context)
+    const handleclick = () => {
+        dispatch({type: 'clear_cart'})
+        dispatch({type: 'totalamount', payload: 0})
+        dispatch({type: 'totalbeforetax', payload: 0})
+    }
     return (
-        <section className="hidden bg-white rounded-lg w-11/12 p-8 pb-16 absolute left-0 right-0 mx-auto top-56">
+        <section className={toggle === false ? " bg-white rounded-lg w-11/12 p-8 pb-16 absolute left-0 right-0 mx-auto top-56 z-50" : "hidden bg-white rounded-lg w-11/12 p-8 pb-16 absolute left-0 right-0 mx-auto top-56"}>
             <div className="bg-darkorange h-16 w-16 flex items-center justify-center rounded-full mb-6">
                 <img className="h-5 w-5" src={check} alt="oval"></img>
             </div>
@@ -31,7 +36,7 @@ const Conformation = () => {
                 <p className="text-white font-bold text-lg">$ {state.total + 50}</p>
             </div>
             <div className="relative">
-            <Link to="/" className="flex items-center justify-center absolute left-0 right-0 bg-darkorange py-3 w-full text-xs text-white">BACK TO HOME</Link>
+            <Link onClick={handleclick} to="/" className="flex items-center justify-center absolute left-0 right-0 bg-darkorange py-3 w-full text-xs text-white">BACK TO HOME</Link>
             </div>
         </section>
     )

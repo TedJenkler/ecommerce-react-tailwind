@@ -1,12 +1,14 @@
 import BackBtn from "../Components.js/BackBtn"
 import Conformation from "../Components.js/Conformation"
 import Summary from "../Components.js/Summary"
+import { useState } from "react"
 
 const CheckOut = () => {
+    const [toggle, setToggle] = useState(true)
     return (<section className="bg-greywhite">
     <BackBtn />
-    <Conformation />
-    <div className="flex items-center justify-center">
+    <Conformation toggle={toggle} />
+    <div className={toggle === false ? "blur-sm bg-bordergrey flex items-center justify-center" : "flex items-center justify-center"}>
         <form className="flex flex-col w-11/12 p-6 bg-white rounded-lg mb-8">
             <h1 className="text-3xl font-bold mb-8">CHECKOUT</h1>
             <p className="text-darkorange text-sm mb-4">Billing details</p>
@@ -41,7 +43,7 @@ const CheckOut = () => {
             <input className="py-4 pl-6 mb-6 border border-bordergrey rounded-lg" placeholder="6891"></input>
         </form>
     </div>
-        <Summary />
+        <Summary toggle={toggle} setToggle={setToggle} />
         </section>)
 }
 

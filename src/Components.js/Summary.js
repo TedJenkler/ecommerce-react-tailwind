@@ -1,7 +1,7 @@
 import { Context } from "../App";
 import { useContext} from "react";
 
-const Summary = () => {
+const Summary = ( {toggle, setToggle} ) => {
 
     const [state, dispatch] = useContext(Context)
     const render = () => {
@@ -21,7 +21,7 @@ const Summary = () => {
         }))
     }
     return (
-    <div className="flex justify-center">
+    <div className={toggle === false ? "blur-sm bg-bordergrey flex justify-center" : "flex justify-center"}>
         <section className="w-11/12 bg-white p-6 rounded-lg mb-24">
             <h1 className="font-bold mb-8">SUMMARY</h1>
             {render()}
@@ -42,7 +42,7 @@ const Summary = () => {
                 <p className="text-lg font-bold text-darkorange">$ {state.total + 50}</p>
             </div>
             <div>
-                <button className="w-full bg-darkorange text-white py-3 text-sm">Continue & Pay</button>
+                <button onClick={(e) => {setToggle(!toggle)}} className="w-full bg-darkorange text-white py-3 text-sm">Continue & Pay</button>
             </div>
         </section>
     </div>
