@@ -1,7 +1,7 @@
 import AddToCart from "./AddToCart"
 import BackBtn from "./BackBtn"
 
-const Product = ( {img, h11, h12, p, price, p2, p3, b1, b2, b3, b4, b5, newp} ) => {
+const Product = ( {img, h11, h12, p, price, p2, p3, b1, b2, b3, b4, b5, newp, nr1, nr2, nr3, nr4, nr5} ) => {
     return (<>
         <BackBtn />
         <section className="flex flex-col items-start text-start">
@@ -18,12 +18,12 @@ const Product = ( {img, h11, h12, p, price, p2, p3, b1, b2, b3, b4, b5, newp} ) 
             <p className="mb-6 mx-6 text-bordergrey">{p2}</p>
             <p className="mb-20 mx-6 text-bordergrey">{p3}</p>
             <h2 className="mb-6 mx-6 text-2xl font-bold">IN THE BOX</h2>
-            <ul className="flex flex-col gap-2 mx-6 mb-20 text-bordergrey">
-                <li>{b1}</li>
-                <li>{b2}</li>
-                <li>{b3}</li>
-                <li>{b4}</li>
-                <li>{b5}</li>
+            <ul className="flex flex-col gap-2 mx-6 mb-20 text-bordergrey text-base">
+                <li className="flex gap-5"><p className="text-darkorange">{nr1}</p>{b1}</li>
+                <li className="flex gap-5"><p className="text-darkorange">{nr2}</p>{b2}</li>
+                <li className="flex gap-5"><p className="text-darkorange">{nr3}</p>{b3}</li>
+                <li className="flex gap-5"><p className="text-darkorange">{nr4}</p>{b4}</li>
+                <li className="flex gap-5"><p className="text-darkorange">{nr5}</p>{b5}</li>
             </ul>
         </section>
         </>)

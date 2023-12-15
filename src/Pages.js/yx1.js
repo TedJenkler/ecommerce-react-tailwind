@@ -39,7 +39,8 @@ const YX1 = () => {
             price="$ 599"
             p2="Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound."           
             p3="The YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black." 
-            b1="Earphone Unit" b2="Multi-size Earplugs" b3="User Manual" b4="USB-C Charging Cable" b5="Travel Pouch" newp={newP} />
+            b1="Earphone Unit" b2="Multi-size Earplugs" b3="User Manual" b4="USB-C Charging Cable" b5="Travel Pouch" newp={newP}
+            nr1="2x" nr2="6x" nr3="1x" nr4="1x" nr5="1x" />
             <div className="flex flex-col items-center">
                 <ImgGroup img1={earphonelose} img2={chargingearphones} img3={earphonecase} alt1="closespeaker" alt2="livingroom" alt3="twospeakers" />
             </div>

@@ -40,7 +40,8 @@ const ZX7 = () => {
             price="$ 3,500"
             p2="Reap the advantages of a flat diaphragm tweeter cone. This provides a fast response rate and excellent high frequencies that lower tiered bookshelf speakers cannot provide. The woofers are made from aluminum that produces a unique and clear sound. XLR inputs allow you to connect to a mixer for more advanced usage."
             p3="The ZX7 speaker is the perfect blend of stylish design and high performance. It houses an encased MDF wooden enclosure which minimises acoustic resonance. Dual connectivity allows pairing through bluetooth or traditional optical and RCA input. Switch input sources and control volume at your finger tips with the included wireless remote. This versatile speaker is equipped to deliver an authentic listening experience."
-            b1="Speaker Unit" b2="Speaker Cloth Panel" b3="User Manual" b4="3.5mm 7.5m Audio Cable" b5="7.5m Optical Cable" newp={newP} />
+            b1="Speaker Unit" b2="Speaker Cloth Panel" b3="User Manual" b4="3.5mm 7.5m Audio Cable" b5="7.5m Optical Cable" newp={newP} 
+            nr1="2x" nr2="2x" nr3="1x" nr4="1x" nr5="1x" />
             <div className="flex flex-col items-center">
                 <ImgGroup img1={closespeakerblack} img2={speakerroom} img3={speakerontable} alt1="closespeakerblack" alt2="speakerroom" alt3="speakerontable" />
             </div>

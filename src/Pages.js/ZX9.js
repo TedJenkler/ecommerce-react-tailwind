@@ -39,7 +39,8 @@ const ZX9 = () => {
             price="$ 4,500"
             p2="Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m)."           
             p3="Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms." 
-            b1="Speaker Unit" b2="Speaker Cloth Panel" b3="User Manual" b4="3.5mm 10m Audio Cable" b5="10m Optical Cable" newp={newP} />
+            b1="Speaker Unit" b2="Speaker Cloth Panel" b3="User Manual" b4="3.5mm 10m Audio Cable" b5="10m Optical Cable" newp={newP} 
+            nr1="2x" nr2="2x" nr3="1x" nr4="1x" nr5="1x" />
             <div className="flex flex-col items-center">
                 <ImgGroup img1={closespeaker} img2={livingroom} img3={twospeakers} alt1="closespeaker" alt2="livingroom" alt3="twospeakers" />
             </div>
