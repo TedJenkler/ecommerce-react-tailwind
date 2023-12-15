@@ -94,12 +94,72 @@ function App() {
           togglecart: true
         };
       }
+      case 'changename': {
+        return {
+          ...state,
+          form: {...state.form, name: action.payload}
+        };
+      }
+      case 'changeemail': {
+        return {
+          ...state,
+          form: {...state.form, email: action.payload}
+        };
+      }
+      case 'changephone': {
+        return {
+          ...state,
+          form: {...state.form, phone: action.payload}
+        };
+      }
+      case 'changeadress': {
+        return {
+          ...state,
+          form: {...state.form, address: action.payload}
+        };
+      }
+      case 'changepostal': {
+        return {
+          ...state,
+          form: {...state.form, postal: action.payload}
+        };
+      }
+      case 'changecity': {
+        return {
+          ...state,
+          form: {...state.form, city: action.payload}
+        };
+      }
+      case 'changecountry': {
+        return {
+          ...state,
+          form: {...state.form, country: action.payload}
+        };
+      }
+      case 'radio': {
+        return {
+          ...state,
+          form: {...state.form, radio: action.payload}
+        };
+      }
+      case 'changeenumber': {
+        return {
+          ...state,
+          form: {...state.form, enumber: action.payload}
+        };
+      }
+      case 'changepin': {
+        return {
+          ...state,
+          form: {...state.form, epin: action.payload}
+        };
+      }
     }
   }
 
   const [product, setProduct] = useState("");
   const [cart, setCart] = useState([]);
-  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: [], total: 0, togglecart: true, togglemenu: true})
+  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: [{}], total: 0, togglecart: true, togglemenu: true, form: {name: "", email: "", phone: "", address: "", postal: "", city: "", country: "", radio: "", enumber: "", epin: ""}})
   return (<>
 
     <Context.Provider value={[state, dispatch]}>
