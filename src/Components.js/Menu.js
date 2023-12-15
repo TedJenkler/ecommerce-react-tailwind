@@ -9,7 +9,7 @@ const Menu = () => {
     const [state, dispatch] = useContext(Context)
     return (
         <section className="relative">
-        <nav className={state.togglemenu === false ? "absolute w-full bg-white z-50 flex flex-col items-center" : "hidden absolute w-full bg-white z-50 flex-col items-center"}>
+        <nav className={state.togglemenu === true ? "hidden absolute w-full bg-white z-50 flex-col items-center" : "flex absolute w-full bg-white z-50 flex-col items-center"}>
             <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
             <LinkItem img={speaker} h2="SPEAKERS" link="/speakers" />
             <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />
