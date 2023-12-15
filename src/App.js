@@ -16,6 +16,7 @@ import { useReducer, useState} from 'react';
 import React from 'react';
 import Cart from './Pages.js/Cart';
 import CheckOut from './Pages.js/CheckOut';
+import Menu from './Components.js/Menu';
 
 export const Context = React.createContext();
 export const CartContext = React.createContext();
@@ -82,7 +83,15 @@ function App() {
       case 'togglecart': {
         return {
           ...state,
-          togglecart: action.payload
+          togglecart: action.payload,
+          togglemenu: true
+        };
+      }
+      case 'togglemenu': {
+        return {
+          ...state,
+          togglemenu: action.payload,
+          togglecart: true
         };
       }
     }
@@ -90,12 +99,13 @@ function App() {
 
   const [product, setProduct] = useState("");
   const [cart, setCart] = useState([]);
-  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: [], total: 0, togglecart: true})
+  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: [], total: 0, togglecart: true, togglemenu: true})
   return (<>
 
     <Context.Provider value={[state, dispatch]}>
     <Nav />
     <CartContext.Provider value={[cart, setCart]}>
+    <Menu />
     <Cart />
     <Routes>
       <Route index path='/' element={<HomePage />} />

@@ -12,7 +12,7 @@ import { useContext } from "react"
 const HomePage = () => {
     const [state, dispatch] = useContext(Context)
     return (
-        <div className={state.togglecart === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>
+        <div className={state.togglecart || state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>
         <header className="bg-black1 hero mb-10 bg-center bg-no-repeat">
             <div className="text-white text-center py-28">
                 <h2 className="mb-4 text-bordergrey text-sm tracking-[10px]">NEW PRODUCT</h2>

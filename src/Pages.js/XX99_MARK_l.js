@@ -33,7 +33,7 @@ const XX99_MARK_l = () => {
         console.log(state)
     },[])
     return (
-        <main className={state.togglecart === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>
+        <main className={state.togglecart || state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>
             <Product img={XX99MARK1} h11="XX99 Mark I" h12="Headphones"
             p="As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go."
             price="$ 1,750"

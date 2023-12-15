@@ -18,11 +18,23 @@ const Nav = () => {
         })
         }
     }
+
+    const togglemenu = () => {
+        if(state.togglemenu === true){
+            dispatch({type: 'togglemenu',
+            payload: false
+        })
+        }else {
+            dispatch({type: 'togglemenu',
+            payload: true
+        })
+        }
+    }
     const [state, dispatch] = useContext(Context)
     return (
         <>
         <nav className="py-8 px-6 flex justify-between border-bordergrey border-b bg-black1">
-            <img src={hamburger} alt="hamburger" />
+            <img onClick={togglemenu} src={hamburger} alt="hamburger" />
             <Link to="/"><img src={logo} alt="logo" /></Link>
             <img onClick={togglecartmenu} src={cart} alt="cart" />
         </nav>
