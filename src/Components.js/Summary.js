@@ -7,57 +7,64 @@ const Summary = ( {toggle, setToggle} ) => {
     const handlesubmit = () => {
         let validate = 0
         if (state.form.name.length > 2){
+            dispatch({type: 'validname', payload: true})
             validate = validate + 1
         }else {
-            alert("name is to short")
+            dispatch({type: 'validname', payload: false})
         }
         if (state.form.email.match(/^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/gm)){
+            dispatch({type: 'validemail', payload: true})
             validate = validate + 1
         }
         else {
-            alert("not guilty email")
+            dispatch({type: 'validemail', payload: false})
         }
         if (state.form.phone.match(/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/)){
+            dispatch({type: 'validphone', payload: true})
             validate = validate + 1
         }
         else {
-            alert("not guilty phone")
+            dispatch({type: 'validphone', payload: false})
         }
         if(state.form.address.length > 3){
+            dispatch({type: 'validaddress', payload: true})
             validate = validate + 1
         }
         else {
-            alert("address is to short")
+            dispatch({type: 'validaddress', payload: false})
         }
         if(state.form.postal.length > 0){
+            dispatch({type: 'validpostal', payload: true})
             validate = validate + 1
         }
         else {
-            alert("postal is to short")
+            dispatch({type: 'validpostal', payload: false})
         }
         if(state.form.city.length > 0){
+            dispatch({type: 'validcity', payload: true})
             validate = validate + 1
         }
         else {
-            alert("city is to short")
+            dispatch({type: 'validcity', payload: false})
         }
         if(state.form.country.length > 3){
+            dispatch({type: 'validcountry', payload: true})
             validate = validate + 1
         }
         else {
-            alert("country is to short")
+            dispatch({type: 'validcountry', payload: false})
         }
         if(state.form.enumber.length > 5){
             validate = validate + 1
         }
         else {
-            alert("wrong enumber")
+
         }
         if(state.form.epin.length === 4){
             validate = validate + 1
         }
         else {
-            alert("Epin is not the right length")
+            
         }
         if((state.form.radio === "cash" && validate === 7) || (state.form.radio !== "cash" && validate === 9)){
             setToggle(!toggle)

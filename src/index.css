@@ -13,3 +13,11 @@
 .speakerbg {
   background-image: url(./Img/speaker-bg.png)
 }
+
+.error {
+  color: red;
+}
+
+.errorborder {
+  border-color: red;
+}
