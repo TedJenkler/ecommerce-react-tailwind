@@ -8,6 +8,11 @@ import { useContext} from "react";
 const CheckOut = () => {
     const [toggle, setToggle] = useState(true)
     const [state, dispatch] = useContext(Context)
+    const handlecash = (e) => {
+        dispatch({type: 'radio', payload: e.target.value})
+        dispatch({type: 'changeenumber', payload: ""})
+        dispatch({type: 'changepin', payload: ""})
+    }
     return (<section className="bg-greywhite">
     <BackBtn />
     <Conformation toggle={toggle} />
@@ -37,7 +42,7 @@ const CheckOut = () => {
                 e-Money
             </label>
             <label className="py-4 w-full border border-bordergrey rounded-lg mb-8">
-                <input className="mx-5 h-4 w-4" name="payment" type="radio" value="cash" onClick={(e) => {dispatch({type: 'radio', payload: e.target.value})}}></input>
+                <input className="mx-5 h-4 w-4" name="payment" type="radio" value="cash" onClick={handlecash}></input>
                 Cash On Delivery
             </label>
             <div className={state.form.radio.match("e-money") ? "flex flex-col" : "hidden"}>
