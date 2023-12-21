@@ -214,6 +214,12 @@ function App() {
           validation: {...state.validation, epin: action.payload}
         };
       }
+      case 'addmorecart': {
+        return {
+          ...state,
+          cart: {...state.cart, [action.payload]: {...state.cart[action.payload], amount: state.cart[action.payload].amount + 1}}
+        };
+      }
     }
   }
 
