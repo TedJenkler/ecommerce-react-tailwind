@@ -14,6 +14,7 @@ const AddToCart = () => {
     }
 
     const add = () => {
+        dispatch({type: 'update_product_id'})
         dispatch({ type: 'add_cart'})
     }
 

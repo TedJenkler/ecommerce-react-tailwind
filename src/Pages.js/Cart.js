@@ -8,7 +8,6 @@ const Cart = () => {
    const emptyCart = () => {
         dispatch({type: 'clear_cart'})
     }
-
     const render = () => {
         return(
         Object.values(state.cart).map((items) => {

@@ -43,17 +43,23 @@ function App() {
           cost: action.payload
         };
       }
+      case 'update_product_id': {
+        return {
+          ...state,
+          id: state.product
+        };
+      }
       case 'add_cart': {
         return {
           ...state,
-          cart: [...state.cart, {img: state.img, product: state.product, cost:state.cost, amount: state.cartcount}],
+          cart: {...state.cart, [state.id]: {img: state.img, product: state.product, cost:state.cost, amount: state.cartcount}},
           cartcount: 0
         };
       }
       case 'clear_cart': {
         return {
           ...state,
-          cart: []
+          cart: {}
         };
       }
       case 'increment': {
@@ -213,7 +219,7 @@ function App() {
 
   const [product, setProduct] = useState("");
   const [cart, setCart] = useState([]);
-  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: [], total: 0, togglecart: true, togglemenu: true, form: {name: "", email: "", phone: "", address: "", postal: "", city: "", country: "", radio: "", enumber: "", epin: ""}, validation: {name: true, email: true, phone: true, address: true, postal: true, city: true, country: true, radio: true, enumber: true, epin: true}})
+  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: {}, total: 0, togglecart: true, togglemenu: true, form: {name: "", email: "", phone: "", address: "", postal: "", city: "", country: "", radio: "", enumber: "", epin: ""}, validation: {name: true, email: true, phone: true, address: true, postal: true, city: true, country: true, radio: true, enumber: true, epin: true}})
   return (<>
 
     <Context.Provider value={[state, dispatch]}>

@@ -20,13 +20,13 @@ const Conformation = ( {toggle} ) => {
             <p className="text-base text-bordergrey mb-6">You will receive an email confirmation shortly.</p>
             <div className="border-b border-bordergrey bg-greywhite rounded-t-lg p-6">
                 <div className="flex mb-6 gap-4">
-                {state.cart[0].img !== undefined ? <img className="h-16 w-16 rounded-lg" src={state.cart[0].img} alt={state.cart[0].product} /> : null}
+                <img className="h-16 w-16 rounded-lg" src={Object.values(state.cart)[0].img} alt={Object.values(state.cart)[0].product} />
                 <div className="flex flex-col justify-around">
-                    <h1 className="text-base font-bold">{state.cart[0].product}</h1>
-                    <p className="text-bordergrey text-sm">$ {state.cart[0].cost}</p>
+                    <h1 className="text-base font-bold">{Object.values(state.cart)[0].product}</h1>
+                    <p className="text-bordergrey text-sm">$ {Object.values(state.cart)[0].cost}</p>
                 </div>
                 <div className="flex items-center justify-end w-full">
-                <p className="text-bordergrey">x{state.cart[0].amount}</p>
+                <p className="text-bordergrey">x{Object.values(state.cart)[0].amount}</p>
                 </div>
                 </div>
             </div>
