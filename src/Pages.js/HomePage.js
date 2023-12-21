@@ -13,16 +13,16 @@ const HomePage = () => {
     const [state, dispatch] = useContext(Context)
     return (
         <div className={state.togglecart  === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>
-        <header className="bg-black1 hero mb-10 bg-center bg-no-repeat">
+        <header className="bg-black1 hero mb-10 bg-center bg-no-repeat md:bg-bottom">
             <div className="text-white text-center py-28">
                 <h2 className="mb-4 text-bordergrey text-sm tracking-[10px]">NEW PRODUCT</h2>
-                <h1 className="mb-6 text-4xl tracking-widest">XX99 Mark II HEADPHONES</h1>
-                <p className="mb-7 text-base">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
+                <h1 className="mb-6 text-4xl tracking-widest md:px-52">XX99 Mark II HEADPHONES</h1>
+                <p className="mb-7 text-base md:px-52">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
                 <Link to="/XX99_MARK_ll" className="text-sm py-3 px-8 bg-darkorange">See Product</Link>
             </div>
         </header>
         <main>
-            <section className="flex flex-col items-center mb-32">
+            <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4 md:mb-24">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
                 <LinkItem img={speaker} h2="SPEAKERS" link="/speakers" />
                 <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />
@@ -31,7 +31,7 @@ const HomePage = () => {
             <section className="bg-darkorange w-11/12 flex flex-col items-center text-center pt-12 rounded-lg pb-14 mb-6 circlebg bg-top bg-no-repeat">
                 <img className="mb-8" src={speakerx200} alt="speaker" />
                 <h1 className="mb-6 text-4xl text-white">ZX9 <br/> SPEAKER</h1>
-                <p className="mb-6 mx-6 text-white text-base">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+                <p className="mb-6 mx-6 text-white text-base md:mx-52">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
                 <Link to="/zx9" className="py-3 px-8 text-white bg-black2">SEE PRODUCT</Link>
             </section>
             </div>

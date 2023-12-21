@@ -33,10 +33,10 @@ const Nav = () => {
     const [state, dispatch] = useContext(Context)
     return (
         <>
-        <nav className="py-8 px-6 flex justify-between border-bordergrey border-b bg-black1">
-            <img onClick={togglemenu} src={hamburger} alt="hamburger" />
-            <Link to="/"><img src={logo} alt="logo" /></Link>
-            <img onClick={togglecartmenu} src={cart} alt="cart" />
+        <nav className="py-8 px-6 flex justify-between border-bordergrey border-b bg-black1 md:justify-between md:relative md:px-10">
+            <img className="" onClick={togglemenu} src={hamburger} alt="hamburger" />
+            <Link className="md:absolute md:left-24" to="/"><img src={logo} alt="logo" /></Link>
+            <img className="" onClick={togglecartmenu} src={cart} alt="cart" />
         </nav>
         </>
     )
