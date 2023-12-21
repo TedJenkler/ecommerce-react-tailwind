@@ -67,10 +67,16 @@ const CheckOut = () => {
                 Cash On Delivery
             </label>
             <div className={state.form.radio.match("e-money") ? "flex flex-col" : "hidden"}>
-            <label className="mb-2 text-xs font-bold">e-Money Number</label>
-            <input onChange={(e) => {dispatch({type: 'changeenumber', payload: e.target.value})}} value={state.form.enumber} className="py-4 pl-6 mb-6 border border-bordergrey rounded-lg" placeholder="238521993"></input>
-            <label className="mb-2 text-xs font-bold">e-Money PIN</label>
-            <input onChange={(e) => {dispatch({type: 'changepin', payload: e.target.value})}} value={state.form.epin} className="py-4 pl-6 mb-6 border border-bordergrey rounded-lg" placeholder="6891"></input>
+            <div className="flex justify-between">
+                <label className={state.validation.enumber === false ? "mb-2 text-xs error" : "mb-2 text-xs"}>e-Money Number</label>
+                <span className={state.validation.enumber === false ? "error text-xs" : "hidden"}>Too Short</span>
+            </div>
+                <input onChange={(e) => {dispatch({type: 'changeenumber', payload: e.target.value})}} value={state.form.enumber} className={state.validation.enumber === false ? "py-4 pl-6 mb-6 border errorborder rounded-lg" : "py-4 pl-6 mb-6 border border-bordergrey rounded-lg"} placeholder="238521993"></input>
+            <div className="flex justify-between">
+            <label className={state.validation.epin === false ? "mb-2 text-xs error" : "mb-2 text-xs"}>e-Money Pin</label>
+                <span className={state.validation.epin === false ? "error text-xs" : "hidden"}>Not Valid</span>
+            </div>
+            <input onChange={(e) => {dispatch({type: 'changepin', payload: e.target.value})}} value={state.form.epin} className={state.validation.enumber === false ? "py-4 pl-6 mb-6 border errorborder rounded-lg" : "py-4 pl-6 mb-6 border border-bordergrey rounded-lg"} placeholder="6891"></input>
             </div>
         </form>
     </div>

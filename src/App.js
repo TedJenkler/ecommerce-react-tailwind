@@ -196,12 +196,24 @@ function App() {
           validation: {...state.validation, country: action.payload}
         };
       }
+      case 'validenumber': {
+        return {
+          ...state,
+          validation: {...state.validation, enumber: action.payload}
+        };
+      }
+      case 'validepin': {
+        return {
+          ...state,
+          validation: {...state.validation, epin: action.payload}
+        };
+      }
     }
   }
 
   const [product, setProduct] = useState("");
   const [cart, setCart] = useState([]);
-  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: [{}], total: 0, togglecart: true, togglemenu: true, form: {name: "", email: "", phone: "", address: "", postal: "", city: "", country: "", radio: "", enumber: "", epin: ""}, validation: {name: true, email: true, phone: true, address: true, postal: true, city: true, country: true, radio: true, enumber: true, epin: true}})
+  const [state, dispatch] = useReducer(reducer, {cartcount: 0 , img: "", product: "none", cost: "", cart: [], total: 0, togglecart: true, togglemenu: true, form: {name: "", email: "", phone: "", address: "", postal: "", city: "", country: "", radio: "", enumber: "", epin: ""}, validation: {name: true, email: true, phone: true, address: true, postal: true, city: true, country: true, radio: true, enumber: true, epin: true}})
   return (<>
 
     <Context.Provider value={[state, dispatch]}>

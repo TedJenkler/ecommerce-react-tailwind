@@ -55,16 +55,18 @@ const Summary = ( {toggle, setToggle} ) => {
             dispatch({type: 'validcountry', payload: false})
         }
         if(state.form.enumber.length > 5){
+            dispatch({type: 'validenumber', payload: true})
             validate = validate + 1
         }
         else {
-
+            dispatch({type: 'validenumber', payload: false})
         }
         if(state.form.epin.length === 4){
+            dispatch({type: 'validepin', payload: true})
             validate = validate + 1
         }
         else {
-            
+            dispatch({type: 'validepin', payload: false})
         }
         if((state.form.radio === "cash" && validate === 7) || (state.form.radio !== "cash" && validate === 9)){
             setToggle(!toggle)
