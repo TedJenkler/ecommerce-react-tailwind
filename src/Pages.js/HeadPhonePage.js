@@ -21,7 +21,7 @@ const HeadPhonePage = () => {
             <ProductLink path="/XX99_MARK_l" isNew={false} img={xx99mark1} h11="XX99 Mark I" h12="Headphones" p="As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go." />
             <ProductLink path="/XX59" isNew={false} img={xx59} h11="XX59" h12="Headphones" p="Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move." />
         </div>
-            <section className="flex flex-col items-center mb-32">
+            <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4 md:mb-24">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
                 <LinkItem img={speaker} h2="SPEAKERS" link={"/speakers"} />
                 <LinkItem img={earphones} h2="EARPHONES" />
