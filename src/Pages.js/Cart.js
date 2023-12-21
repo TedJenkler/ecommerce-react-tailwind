@@ -11,19 +11,20 @@ const Cart = () => {
     const render = () => {
         return(
         Object.values(state.cart).map((items) => {
+            if(items.amount > 0){
             return (<div key={items.product} className="flex mb-6 gap-4 relative">
-                {console.log(items.product)}
+                {console.log(items.amount)}
                 <img className="h-16 w-16 rounded-lg" src={items.img} alt={items.product} />
                 <div className="flex flex-col justify-around">
                     <h1 className="text-base font-bold">{items.product}</h1>
                     <p className="text-bordergrey text-sm">$ {items.cost}</p>
                 </div>
                 <div className="flex items-center absolute right-0 top-1/2 bottom-1/2">
-                    <button className="h-6 w-6 bg-greywhite flex items-center justify-center">-</button>
+                    <button onClick={(e) => {dispatch({type: 'removefromcart', payload: items.product})}} className="h-6 w-6 bg-greywhite flex items-center justify-center">-</button>
                     <p className="h-6 w-6 bg-greywhite flex items-center justify-center">{items.amount}</p>
                     <button onClick={(e) => {dispatch({type: 'addmorecart', payload: items.product})}} className="h-6 w-6 bg-greywhite flex items-center justify-center">+</button>
                 </div>
-                </div>)
+                </div>)}
         }))
     }
 

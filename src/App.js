@@ -220,6 +220,12 @@ function App() {
           cart: {...state.cart, [action.payload]: {...state.cart[action.payload], amount: state.cart[action.payload].amount + 1}}
         };
       }
+      case 'removefromcart': {
+        return {
+          ...state,
+          cart: {...state.cart, [action.payload]: {...state.cart[action.payload], amount: state.cart[action.payload].amount - 1}}
+        };
+      }
     }
   }
 
