@@ -1,4 +1,5 @@
 {
+  "homepage": "http://tedjenkler.github.io/ecommerce-react-tailwind/",
   "name": "ecommerce-site-react-tailwind",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "react-router-dom": "^6.20.1",
     "tailwindcss": "^3.3.6"
   }

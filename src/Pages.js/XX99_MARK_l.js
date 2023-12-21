@@ -30,7 +30,6 @@ const XX99_MARK_l = () => {
         dispatch({ type: 'update_product_cost',
         payload: 1750
     });
-        console.log(state)
     },[])
     return (
         <main className={state.togglecart  === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>

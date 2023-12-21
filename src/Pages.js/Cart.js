@@ -13,7 +13,6 @@ const Cart = () => {
         Object.values(state.cart).map((items) => {
             if(items.amount > 0){
             return (<div key={items.product} className="flex mb-6 gap-4 relative">
-                {console.log(items.amount)}
                 <img className="h-16 w-16 rounded-lg" src={items.img} alt={items.product} />
                 <div className="flex flex-col justify-around">
                     <h1 className="text-base font-bold">{items.product}</h1>

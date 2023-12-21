@@ -30,7 +30,6 @@ const ZX7 = () => {
         dispatch({ type: 'update_product_cost',
         payload: 3500
     });
-        console.log(state)
     },[])
 
     return (
