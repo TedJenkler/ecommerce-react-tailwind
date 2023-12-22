@@ -37,10 +37,10 @@ const Nav = () => {
             <img className="lg:hidden lg:absolute" onClick={togglemenu} src={hamburger} alt="hamburger" />
             <Link className="md:absolute md:left-24 lg:relative lg:left-0" to="/"><img src={logo} alt="logo" /></Link>
             <ul className="hidden absolute text-white lg:relative lg:flex lg:gap-8">
-                <li className="hover:text-darkorange">HOME</li>
-                <li className="hover:text-darkorange">HEADPHONES</li>
-                <li className="hover:text-darkorange">SPEAKERS</li>
-                <li className="hover:text-darkorange">EARPHONES</li>
+                <Link to="/" className="hover:text-darkorange">HOME</Link>
+                <Link to="/headphones" className="hover:text-darkorange">HEADPHONES</Link>
+                <Link to="/speakers" className="hover:text-darkorange">SPEAKERS</Link>
+                <Link to="/earphones" className="hover:text-darkorange">EARPHONES</Link>
             </ul>
             <img className="" onClick={togglecartmenu} src={cart} alt="cart" />
         </nav>

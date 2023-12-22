@@ -13,11 +13,11 @@ const EarPhonePage = () => {
     const [state, dispatch] = useContext(Context)
     return (<>
         <SubHeader h1="EARPHONES" />
-        <main className={state.togglecart === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>
+        <main className={state.togglecart === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center"}>
         <div className="flex flex-col items-center">
-            <ProductLink path="/yx1" isNew={true} img={yx1} h11="YX1 WIRELESS" h12="EARPHONES" p="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature." />
+            <ProductLink mway="lg:ml-20" way="lg:flex-row" path="/yx1" isNew={true} img={yx1} h11="YX1 WIRELESS" h12="EARPHONES" p="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature." />
         </div>
-            <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4 md:mb-24">
+            <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4 md:mb-24 lg:mb-40 lg:w-3/4 lg:gap-8">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
                 <LinkItem img={speaker} h2="SPEAKERS" link={"/speakers"} />
                 <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />
