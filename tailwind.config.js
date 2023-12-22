@@ -13,6 +13,7 @@ module.exports = {
       'black2': '#000000',
       'lightgreywhite': '#FAFAFA',
       'bordergrey': '#979797',
+      'hoverblack': '#4C4C4C',
     },
     extend: {
     },

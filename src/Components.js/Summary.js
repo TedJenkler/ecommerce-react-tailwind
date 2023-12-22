@@ -110,7 +110,7 @@ const Summary = ( {toggle, setToggle} ) => {
                 <p className="text-lg font-bold text-darkorange">$ {state.total + 50}</p>
             </div>
             <div>
-                <button onClick={handlesubmit} className="w-full bg-darkorange text-white py-3 text-sm">Continue & Pay</button>
+                <button onClick={handlesubmit} className="w-full bg-darkorange text-white py-3 text-sm hover:bg-lightorange">Continue & Pay</button>
             </div>
         </section>
     </div>

@@ -10,7 +10,7 @@ const ProductLink = ( {img, h11, h12, p, path, isNew} ) => {
             <h1 className="m-0 text-3xl">{h11}</h1>
             <h1 className="mb-6 text-3xl">{h12}</h1>
             <p className="text-base mb-6 text-bordergrey">{p}</p>
-            <Link to={path} className="text-sm text-white py-3 px-8 bg-darkorange">SEE PRODUCT</Link>
+            <Link to={path} className="text-sm text-white py-3 px-8 bg-darkorange hover:bg-lightorange">SEE PRODUCT</Link>
         </section>
     )
 }

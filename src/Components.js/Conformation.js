@@ -40,7 +40,7 @@ const Conformation = ( {toggle} ) => {
                 </div>
             </div>
             <div className="relative">
-            <Link onClick={handleclick} to="/" className="flex items-center justify-center absolute left-0 right-0 bg-darkorange py-3 w-full text-xs text-white">BACK TO HOME</Link>
+            <Link onClick={handleclick} to="/" className="flex items-center justify-center absolute left-0 right-0 bg-darkorange py-3 w-full text-xs text-white hover:bg-lightorange">BACK TO HOME</Link>
             </div>
         </section>
     )

@@ -19,9 +19,9 @@ const Cart = () => {
                     <p className="text-bordergrey text-sm">$ {items.cost}</p>
                 </div>
                 <div className="flex items-center absolute right-0 top-1/2 bottom-1/2">
-                    <button onClick={(e) => {dispatch({type: 'removefromcart', payload: items.product})}} className="h-6 w-6 bg-greywhite flex items-center justify-center">-</button>
+                    <button onClick={(e) => {dispatch({type: 'removefromcart', payload: items.product})}} className="h-6 w-6 bg-greywhite flex items-center justify-center hover:text-darkorange">-</button>
                     <p className="h-6 w-6 bg-greywhite flex items-center justify-center">{items.amount}</p>
-                    <button onClick={(e) => {dispatch({type: 'addmorecart', payload: items.product})}} className="h-6 w-6 bg-greywhite flex items-center justify-center">+</button>
+                    <button onClick={(e) => {dispatch({type: 'addmorecart', payload: items.product})}} className="h-6 w-6 bg-greywhite flex items-center justify-center hover:text-darkorange">+</button>
                 </div>
                 </div>)}
         }))
@@ -33,7 +33,7 @@ const Cart = () => {
                 <div className="flex items-center">
                     <h1 className="text-lg font-bold">CART</h1><h1 className="text-lg font-bold">({state.amount})</h1>
                 </div>
-                    <button className="underline text-bordergrey" onClick={emptyCart}>Remove all</button>
+                    <button className="underline text-bordergrey hover:text-lightorange" onClick={emptyCart}>Remove all</button>
             </div>
             <div>
                 {render()}
@@ -43,7 +43,7 @@ const Cart = () => {
                 <p className="text-lg font-bold">$ {state.total}</p>
             </div>
             <div className="flex justify-center items-center">
-            <Link onClick={(e) => {dispatch({type: 'togglecart', payload: true})}} to={state.total > 0 ? "/checkout" : ""} className="bg-darkorange text-white py-4 w-full text-xs flex items-center justify-center">CHECKOUT</Link>
+            <Link onClick={(e) => {dispatch({type: 'togglecart', payload: true})}} to={state.total > 0 ? "/checkout" : ""} className="bg-darkorange text-white py-4 w-full text-xs flex items-center justify-center hover:bg-lightorange">CHECKOUT</Link>
             </div>
         </section>
     )

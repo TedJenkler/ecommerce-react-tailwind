@@ -11,10 +11,10 @@ const Footer = () => {
             <div className="absolute top-0 bg-darkorange w-24 h-1"></div>
             <Link to="/"><img className="mb-12" src={logo} alt="footerlogo" /></Link>
             <ul className="flex flex-col gap-4 mb-12 md:flex-row">
-                <Link to="/"><li>HOME</li></Link>
-                <Link to="/Headphones"><li>HEADPHONES</li></Link>
-                <Link to="/Speakers"><li>SPEAKERS</li></Link>
-                <Link to="/Earphones"><li>EARPHONES</li></Link>
+                <Link className="hover:text-darkorange" to="/"><li>HOME</li></Link>
+                <Link className="hover:text-darkorange" to="/Headphones"><li>HEADPHONES</li></Link>
+                <Link className="hover:text-darkorange" to="/Speakers"><li>SPEAKERS</li></Link>
+                <Link className="hover:text-darkorange" to="/Earphones"><li>EARPHONES</li></Link>
             </ul>
             <p className="mb-12 text-bordergrey mx-6 md:text-start md:mx-0">Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</p>
             <div className="flex w-full flex-col items-center md:flex-row md:justify-between md:items-baseline">

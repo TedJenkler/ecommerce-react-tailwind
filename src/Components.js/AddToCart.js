@@ -60,11 +60,11 @@ const AddToCart = () => {
     return (
         <div className="flex gap-4 mb-20 ml-6">
             <div className="bg-greywhite flex items-center justify-center">
-            <button onClick={noless0} className="w-12 h-12">-</button>
-            <input className="bg-greywhite w-5 h-5 flex items-center justify-center" value={state.cartcount}></input>
-            <button onClick={(e) => {dispatch({ type: 'increment' })}} className="w-12 h-12">+</button>
+            <button onClick={noless0} className="w-12 h-12 hover:text-darkorange">-</button>
+            <input className="bg-greywhite w-5 h-5 flex items-center justify-center" value={state.cartcount} disabled></input>
+            <button onClick={(e) => {dispatch({ type: 'increment' })}} className="w-12 h-12 hover:text-darkorange">+</button>
             </div>
-            <button onClick={add} className="bg-darkorange text-xs px-8 h-12 text-white">ADD TO CART</button>
+            <button onClick={add} className="bg-darkorange text-xs px-8 h-12 text-white hover:bg-lightorange">ADD TO CART</button>
         </div>
     )
 }

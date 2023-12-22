@@ -8,7 +8,7 @@ const LinkItem = ( {img, h2, link} ) => {
             <img className="absolute top-0 left-1/2 -translate-x-1/2" src={img} alt={h2} />
             <div className="bg-greywhite pt-20 pb-5 text-center rounded-lg">
                 <h2 className="mb-4">{h2}</h2>
-                <Link to={link}><p className="text-bordergrey tracking-wide flex justify-center items-center gap-1">SHOP<img src={orangearrow} alt="orange arrow" /></p></Link>
+                <Link to={link}><p className="text-bordergrey tracking-wide flex justify-center items-center gap-1 hover:text-darkorange">SHOP<img src={orangearrow} alt="orange arrow" /></p></Link>
             </div>
         </div>
         </>

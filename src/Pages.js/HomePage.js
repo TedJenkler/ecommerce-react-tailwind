@@ -18,7 +18,7 @@ const HomePage = () => {
                 <h2 className="mb-4 text-bordergrey text-sm tracking-[10px]">NEW PRODUCT</h2>
                 <h1 className="mb-6 text-4xl tracking-widest md:px-52">XX99 Mark II HEADPHONES</h1>
                 <p className="mb-7 text-base md:px-52">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
-                <Link to="/XX99_MARK_ll" className="text-sm py-3 px-8 bg-darkorange">See Product</Link>
+                <Link to="/XX99_MARK_ll" className="text-sm py-3 px-8 bg-darkorange hover:bg-lightorange">See Product</Link>
             </div>
         </header>
         <main>
@@ -32,13 +32,13 @@ const HomePage = () => {
                 <img className="mb-8" src={speakerx200} alt="speaker" />
                 <h1 className="mb-6 text-4xl text-white">ZX9 <br/> SPEAKER</h1>
                 <p className="mb-6 mx-6 text-white text-base md:mx-52">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-                <Link to="/zx9" className="py-3 px-8 text-white bg-black2">SEE PRODUCT</Link>
+                <Link to="/zx9" className="py-3 px-8 text-white bg-black2 hover:bg-hoverblack">SEE PRODUCT</Link>
             </section>
             </div>
             <div className="flex flex-col items-center">
                 <section className="py-24 bg-greywhite w-11/12 speakerbg bg-right bg-no-repeat bg-cover mb-6">
                     <h1 className="ml-6 mb-8">ZX7 SPEAKER</h1>
-                    <Link to="/zx7" className="ml-6 border-black2 border py-3 px-8">SEE PRODUCT</Link>
+                    <Link to="/zx7" className="ml-6 border-black2 border py-3 px-8 hover:bg-black2 hover:text-white">SEE PRODUCT</Link>
                 </section>
             </div>
             <div className="flex flex-col items-center">
@@ -46,7 +46,7 @@ const HomePage = () => {
                     <img className="w-full mb-6" src={earphoneimg} alt="Earphones" />
                     <div className="bg-greywhite py-10">
                         <h1 className="ml-6 mb-8">YX1 EARPHONES</h1>
-                        <Link to="/yx1" className="ml-6 border-black2 border py-3 px-8">SEE PRODUCT</Link>
+                        <Link to="/yx1" className="ml-6 border-black2 border py-3 px-8 hover:bg-black2 hover:text-white">SEE PRODUCT</Link>
                     </div>
                 </section>
             </div>
