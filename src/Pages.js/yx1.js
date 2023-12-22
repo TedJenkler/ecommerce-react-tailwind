@@ -32,7 +32,7 @@ const YX1 = () => {
     });
     },[])
     return (
-        <main className={state.togglecart  === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>
+        <main className={state.togglecart  === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center lg:px-10"}>
             <Product img={yx1} h11="YX1 WIRELESS" h12="EARPHONES"
             p="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature." 
             price="$ 599"
@@ -43,10 +43,10 @@ const YX1 = () => {
             <div className="flex flex-col items-center">
                 <ImgGroup img1={earphonelose} img2={chargingearphones} img3={earphonecase} alt1="closespeaker" alt2="livingroom" alt3="twospeakers" />
             </div>
-            <div className="flex flex-col items-center md:mb-32">
+            <div className="flex flex-col items-center md:mb-32 lg:mx-0">
                 <Suggestion link1="/xx99_MARK_l" link2="/XX59" link3="/zx9"  img1={suggestionxx99} alt1="XX99 MARK I" h21="XX99 MARK I" img2={suggestionxx59} alt2="XX59" h22="XX59" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
             </div>
-            <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4">
+            <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4 lg:mb-40 lg:w-3/4 lg:gap-8">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
                 <LinkItem img={speaker} h2="SPEAKERS" link={"/speakers"} />
                 <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />
