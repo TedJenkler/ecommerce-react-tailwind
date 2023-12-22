@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecommerce-react-tailwind/static/css/main.f240723e.css",
-    "main.js": "/ecommerce-react-tailwind/static/js/main.98b87edf.js",
+    "main.css": "/ecommerce-react-tailwind/static/css/main.1965784e.css",
+    "main.js": "/ecommerce-react-tailwind/static/js/main.64c4ee0f.js",
     "static/js/787.5f6246a1.chunk.js": "/ecommerce-react-tailwind/static/js/787.5f6246a1.chunk.js",
     "static/media/earphonecase.png": "/ecommerce-react-tailwind/static/media/earphonecase.e689806dbacf3bb6ef92.png",
     "static/media/glowingheadphones.png": "/ecommerce-react-tailwind/static/media/glowingheadphones.6a4fd23ec169ac7b0f11.png",
@@ -37,6 +37,7 @@
     "static/media/ZX7_product.png": "/ecommerce-react-tailwind/static/media/ZX7_product.65c4ca70138fa27677c2.png",
     "static/media/bookandheadphones.png": "/ecommerce-react-tailwind/static/media/bookandheadphones.fda610140d91f21fa086.png",
     "static/media/XX59_product.png": "/ecommerce-react-tailwind/static/media/XX59_product.a0c361e34f1a328ebad1.png",
+    "static/media/orangecirclebg-tablet.png": "/ecommerce-react-tailwind/static/media/orangecirclebg-tablet.74a6e124dbf636e79466.png",
     "static/media/headphones.png": "/ecommerce-react-tailwind/static/media/headphones.55be6b0bb43d3c72916f.png",
     "static/media/suggestionxx99mark1.png": "/ecommerce-react-tailwind/static/media/suggestionxx99mark1.5daad0fccf2ef1c39ce0.png",
     "static/media/speakers.png": "/ecommerce-react-tailwind/static/media/speakers.9c5b2e1a2765b83d1188.png",
@@ -51,12 +52,12 @@
     "static/media/facebook.svg": "/ecommerce-react-tailwind/static/media/facebook.c819042face097d5d931fae085dedfbe.svg",
     "static/media/Group.svg": "/ecommerce-react-tailwind/static/media/Group.e1ba3e8155d63f744df2abf92a4b4efb.svg",
     "static/media/orangearrow.svg": "/ecommerce-react-tailwind/static/media/orangearrow.aefddf297740fe9b50fc97d86c1332ea.svg",
-    "main.f240723e.css.map": "/ecommerce-react-tailwind/static/css/main.f240723e.css.map",
-    "main.98b87edf.js.map": "/ecommerce-react-tailwind/static/js/main.98b87edf.js.map",
+    "main.1965784e.css.map": "/ecommerce-react-tailwind/static/css/main.1965784e.css.map",
+    "main.64c4ee0f.js.map": "/ecommerce-react-tailwind/static/js/main.64c4ee0f.js.map",
     "787.5f6246a1.chunk.js.map": "/ecommerce-react-tailwind/static/js/787.5f6246a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f240723e.css",
-    "static/js/main.98b87edf.js"
+    "static/css/main.1965784e.css",
+    "static/js/main.64c4ee0f.js"
   ]
 }
