@@ -43,10 +43,10 @@ const YX1 = () => {
             <div className="flex flex-col items-center">
                 <ImgGroup img1={earphonelose} img2={chargingearphones} img3={earphonecase} alt1="closespeaker" alt2="livingroom" alt3="twospeakers" />
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center md:mb-32">
                 <Suggestion link1="/xx99_MARK_l" link2="/XX59" link3="/zx9"  img1={suggestionxx99} alt1="XX99 MARK I" h21="XX99 MARK I" img2={suggestionxx59} alt2="XX59" h22="XX59" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
             </div>
-            <section className="flex flex-col items-center mb-32">
+            <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
                 <LinkItem img={speaker} h2="SPEAKERS" link={"/speakers"} />
                 <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />

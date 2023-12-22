@@ -44,10 +44,10 @@ const ZX7 = () => {
             <div className="flex flex-col items-center">
                 <ImgGroup img1={closespeakerblack} img2={speakerroom} img3={speakerontable} alt1="closespeakerblack" alt2="speakerroom" alt3="speakerontable" />
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center md:mb-32">
                 <Suggestion link1="/ZX9" link2="/xx99_MARK_l" link3="/xx59"  img1={suggestionzx9} alt1="ZX9 SPEAKER" h21="ZX9 SPEAKER" img2={suggestionxx99} alt2="XX99MARKl" h22="XX99 MARK l" img3={suggestionxx59} alt3="xx59" h23="XX59" />
             </div>
-            <section className="flex flex-col items-center mb-32">
+            <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
                 <LinkItem img={speaker} h2="SPEAKERS" link={"/speakers"} />
                 <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />

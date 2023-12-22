@@ -43,10 +43,10 @@ const XX99_MARK_l = () => {
             <div className="flex flex-col items-center">
                 <ImgGroup img1={hangingheadphone} img2={itemsonfloor} img3={glowingheadphones} alt1="hangingheadphones" alt2="thingsonfloor" alt3="glowingheadphones" />
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center md:mb-32">
                 <Suggestion link1="/XX99_MARK_ll" link2="/xx59" link3="/zx9" img1={suggestionxx99} alt1="xx99mark2" h21="XX99 MARK II" img2={suggestionxx59} alt2="XX59" h22="XX59" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
             </div>
-            <section className="flex flex-col items-center mb-32">
+            <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4 md:mb-32">
                 <LinkItem img={headphones} h2="HEADPHONES" link="/headphones" />
                 <LinkItem img={speaker} h2="SPEAKERS" link={"/speakers"} />
                 <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />
