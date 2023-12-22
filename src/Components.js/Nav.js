@@ -34,8 +34,14 @@ const Nav = () => {
     return (
         <>
         <nav className="py-8 px-6 flex justify-between border-bordergrey border-b bg-black1 md:justify-between md:relative md:px-10">
-            <img className="" onClick={togglemenu} src={hamburger} alt="hamburger" />
-            <Link className="md:absolute md:left-24" to="/"><img src={logo} alt="logo" /></Link>
+            <img className="lg:hidden lg:absolute" onClick={togglemenu} src={hamburger} alt="hamburger" />
+            <Link className="md:absolute md:left-24 lg:relative lg:left-0" to="/"><img src={logo} alt="logo" /></Link>
+            <ul className="hidden absolute text-white lg:relative lg:flex lg:gap-8">
+                <li className="hover:text-darkorange">HOME</li>
+                <li className="hover:text-darkorange">HEADPHONES</li>
+                <li className="hover:text-darkorange">SPEAKERS</li>
+                <li className="hover:text-darkorange">EARPHONES</li>
+            </ul>
             <img className="" onClick={togglecartmenu} src={cart} alt="cart" />
         </nav>
         </>
