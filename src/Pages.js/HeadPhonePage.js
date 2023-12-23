@@ -15,7 +15,7 @@ const HeadPhonePage = () => {
     const [state, dispatch] = useContext(Context)
     return (<>
         <SubHeader h1="HEADPHONES" />
-        <main className={state.togglecart  === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center"}>
+        <main className={state.togglecart  === false ? "blur-sm brightness-50 bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center"}>
         <div className="flex flex-col items-center">
             <ProductLink mway="lg:ml-20" way="lg:flex-row" path="/XX99_MARK_ll" isNew={true} img={xx99mark2} h11="XX99 Mark II" h12="Headphones" p="The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound." />
             <ProductLink mway="lg:mr-20" way="lg:flex-row-reverse" path="/XX99_MARK_l" isNew={false} img={xx99mark1} h11="XX99 Mark I" h12="Headphones" p="As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go." />

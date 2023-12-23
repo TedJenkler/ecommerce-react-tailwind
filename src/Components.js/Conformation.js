@@ -20,7 +20,7 @@ const Conformation = ( {toggle} ) => {
             <p className="text-base text-bordergrey mb-6">You will receive an email confirmation shortly.</p>
             <div className="md:flex md:h-36 md:mb-24 md:w-full">
                 <div className="md:flex md:flex-col lg:w-2/3">
-                    <div className="border-b border-bordergrey bg-greywhite rounded-t-lg p-6 md:rounded-tl-lg md:rounded-tr-none lg:px-4">
+                    <div className="border-b border-bordergrey/20 bg-greywhite rounded-t-lg p-6 pb-0 md:rounded-tl-lg md:rounded-tr-none lg:px-4">
                         <div className="flex mb-6 gap-4">
                         <img className="h-16 w-16 rounded-lg" src={Object.values(state.cart)[0].img} alt={Object.values(state.cart)[0].product} />
                         <div className="flex flex-col justify-around">

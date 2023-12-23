@@ -9,7 +9,7 @@ const Product = ( {img, h11, h12, p, price, p2, p3, b1, b2, b3, b4, b5, newp, nr
         <section className="flex flex-col items-start text-start">
             <div className="md:flex md:flex-row md:mb-32 md:mr-10 lg:mb-40">
                 <div className="flex flex-col items-center w-full md:min-h-full md:bg-greywhite md:justify-center md:ml-10 md:mr-16 rounded-lg">
-                    <img className="mb-8" src={img} alt={h11} />
+                    <img className="mb-8 w-11/12" src={img} alt={h11} />
                 </div>
                 <div className="md:mt-12">
                 {newp === true ? <h2 className="tracking-[10px] text-darkorange mb-6 text-sm ml-6">NEW PRODUCT</h2> : null}

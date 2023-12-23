@@ -33,7 +33,7 @@ const ZX7 = () => {
     },[])
 
     return (
-        <main className={state.togglecart  === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center lg:px-10"}>
+        <main className={state.togglecart  === false ? "blur-sm brightness-50 bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center lg:px-10"}>
             <Product img={zx7} h11="ZX7" h12="SPEAKER"
             p="Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use."
             price="$ 3,500"

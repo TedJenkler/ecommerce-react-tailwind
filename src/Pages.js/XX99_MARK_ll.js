@@ -32,7 +32,7 @@ const XX99_MARK_ll = () => {
     });
     },[])
     return (
-        <main className={state.togglecart  === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center lg:px-10"}>
+        <main className={state.togglecart  === false ? "blur-sm brightness-50 bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center lg:px-10"}>
             <Product img={XX99MARK2} h11="XX99 Mark II" h12="Headphones"
             p="The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound." 
             price="$ 2,999"

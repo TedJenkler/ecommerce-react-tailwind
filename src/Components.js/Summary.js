@@ -80,7 +80,7 @@ const Summary = ( {toggle, setToggle} ) => {
                 <img className="h-16 w-16 rounded-lg" src={items.img} alt={items.product} />
                 <div className="flex flex-col justify-around">
                     <h1 className="text-base font-bold">{items.product}</h1>
-                    <p className="text-bordergrey text-sm">$ {items.cost}</p>
+                    <p className="text-bordergrey text-sm"> $ {items.cost}</p>
                 </div>
                 <div className="flex items-center justify-end w-full">
                 <p className="text-bordergrey">x{items.amount}</p>
@@ -89,7 +89,7 @@ const Summary = ( {toggle, setToggle} ) => {
         }))
     }
     return (
-    <div className={toggle === false ? "blur-sm bg-bordergrey flex justify-center" : "flex justify-center"}>
+    <div className={toggle === false ? "blur-sm brightness-50 bg-bordergrey flex justify-center" : "flex justify-center"}>
         <section className="w-11/12 bg-white p-6 rounded-lg mb-24 lg:mt-16 lg:w-80">
             <h1 className="font-bold mb-8">SUMMARY</h1>
             {render()}
@@ -97,7 +97,7 @@ const Summary = ( {toggle, setToggle} ) => {
                 <p className="text-base text-bordergrey">TOTAL</p>
                 <p className="text-lg font-bold">$ {state.total}</p>
             </div>
-            <div className="flex mb-2 justify-between">
+            <div className="flex mb-2 justify-between flex-wrap">
                 <p className="text-base text-bordergrey">SHIPPING</p>
                 <p className="text-lg font-bold">$ 50</p>
             </div>

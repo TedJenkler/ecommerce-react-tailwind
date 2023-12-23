@@ -32,7 +32,7 @@ const ZX9 = () => {
     });
     },[])
     return (
-        <main className={state.togglecart === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center lg:px-10"}>
+        <main className={state.togglecart === false ? "blur-sm brightness-50 bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center lg:px-10"}>
             <Product img={zx9} h11="ZX9" h12="SPEAKER"
             p="Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups." 
             price="$ 4,500"

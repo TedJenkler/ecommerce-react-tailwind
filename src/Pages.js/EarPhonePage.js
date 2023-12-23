@@ -13,7 +13,7 @@ const EarPhonePage = () => {
     const [state, dispatch] = useContext(Context)
     return (<>
         <SubHeader h1="EARPHONES" />
-        <main className={state.togglecart === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center"}>
+        <main className={state.togglecart === false ? "blur-sm brightness-50 bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : "lg:flex lg:flex-col lg:items-center"}>
         <div className="flex flex-col items-center">
             <ProductLink mway="lg:ml-20" way="lg:flex-row" path="/yx1" isNew={true} img={yx1} h11="YX1 WIRELESS" h12="EARPHONES" p="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature." />
         </div>
