@@ -11,7 +11,7 @@ const Conformation = ( {toggle} ) => {
         dispatch({type: 'totalbeforetax', payload: 0})
     }
     return (
-        <section className={toggle === false ? " bg-white rounded-lg w-11/12 p-8 pb-16 absolute left-0 right-0 mx-auto top-56 z-50 md:w-3/4 lg:w-1/2 xl:w-1/3" : "hidden bg-white rounded-lg w-11/12 p-8 pb-16 absolute left-0 right-0 mx-auto top-56"}>
+        <section className={toggle === false ? " bg-white rounded-lg w-11/12 p-8 pb-16 absolute left-0 right-0 mx-auto top-56 z-50 md:w-3/4 lg:w-1/2 xl:w-1/3" : "hidden"}>
             <div className="bg-darkorange h-16 w-16 flex items-center justify-center rounded-full mb-6">
                 <img className="h-5 w-5" src={check} alt="oval"></img>
             </div>

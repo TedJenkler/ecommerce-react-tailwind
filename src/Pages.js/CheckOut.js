@@ -14,10 +14,10 @@ const CheckOut = () => {
         dispatch({type: 'changepin', payload: ""})
     }
     return (<section className="bg-greywhite lg:flex lg:justify-center lg:items-start lg:gap-8">
-    <div>
-    <BackBtn />
     <Conformation toggle={toggle} />
-    <div className={toggle === false ? "blur-sm brightness-50 brightness-50 bg-bordergrey flex items-center justify-center" : "flex items-center justify-center"}>
+    <div className={toggle === false ? "blur-sm brightness-50 bg-bordergrey" : null}>
+    <BackBtn />
+    <div className={toggle === false ? "blur-sm brightness-50  bg-bordergrey flex items-center justify-center" : "flex items-center justify-center"}>
         <form className="flex flex-col w-11/12 p-6 bg-white rounded-lg mb-8 lg:w-full">
             <h1 className="text-3xl font-bold mb-8">CHECKOUT</h1>
             {/* Personal Info Part*/}
