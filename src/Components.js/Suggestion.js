@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Suggestion = ( {img1, alt1, h21, img2, alt2, h22, img3, alt3, h23, link1, link2, link3} ) => {
     return(
-        <section className="flex flex-col items-center md:w-11/12">
+        <section className="flex flex-col items-center md:w-11/12 lg:w-full">
             <h2 className="text-2xl font-bold mb-10">YOU MAY ALSO LIKE</h2>
             <div className="flex flex-col items-center md:flex-row md:gap-3">
                 <div className="flex flex-col items-center md:w-56">

@@ -51,7 +51,7 @@ const XX59 = () => {
                 <LinkItem img={speaker} h2="SPEAKERS" link={"/speakers"} />
                 <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />
             </section>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center lg:w-3/4">
                 <BestInfo />
             </div>
         </main>

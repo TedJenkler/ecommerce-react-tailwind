@@ -23,7 +23,7 @@ const Conformation = ( {toggle} ) => {
                     <div className="border-b border-bordergrey/20 bg-greywhite rounded-t-lg p-6 pb-0 md:rounded-tl-lg md:rounded-tr-none lg:px-4">
                         <div className="flex mb-6 gap-4">
                         <img className="h-16 w-16 rounded-lg" src={Object.values(state.cart)[0].img} alt={Object.values(state.cart)[0].product} />
-                        <div className="flex flex-col justify-around">
+                        <div className="flex flex-col justify-around min-w-max">
                             <h1 className="text-base font-bold">{Object.values(state.cart)[0].product}</h1>
                             <p className="text-bordergrey text-sm">$ {Object.values(state.cart)[0].cost}</p>
                         </div>
