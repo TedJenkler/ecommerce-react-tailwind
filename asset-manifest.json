@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecommerce-react-tailwind/static/css/main.1965784e.css",
-    "main.js": "/ecommerce-react-tailwind/static/js/main.64c4ee0f.js",
+    "main.css": "/ecommerce-react-tailwind/static/css/main.35e8823a.css",
+    "main.js": "/ecommerce-react-tailwind/static/js/main.c11f13df.js",
     "static/js/787.5f6246a1.chunk.js": "/ecommerce-react-tailwind/static/js/787.5f6246a1.chunk.js",
     "static/media/earphonecase.png": "/ecommerce-react-tailwind/static/media/earphonecase.e689806dbacf3bb6ef92.png",
     "static/media/glowingheadphones.png": "/ecommerce-react-tailwind/static/media/glowingheadphones.6a4fd23ec169ac7b0f11.png",
@@ -52,12 +52,12 @@
     "static/media/facebook.svg": "/ecommerce-react-tailwind/static/media/facebook.c819042face097d5d931fae085dedfbe.svg",
     "static/media/Group.svg": "/ecommerce-react-tailwind/static/media/Group.e1ba3e8155d63f744df2abf92a4b4efb.svg",
     "static/media/orangearrow.svg": "/ecommerce-react-tailwind/static/media/orangearrow.aefddf297740fe9b50fc97d86c1332ea.svg",
-    "main.1965784e.css.map": "/ecommerce-react-tailwind/static/css/main.1965784e.css.map",
-    "main.64c4ee0f.js.map": "/ecommerce-react-tailwind/static/js/main.64c4ee0f.js.map",
+    "main.35e8823a.css.map": "/ecommerce-react-tailwind/static/css/main.35e8823a.css.map",
+    "main.c11f13df.js.map": "/ecommerce-react-tailwind/static/js/main.c11f13df.js.map",
     "787.5f6246a1.chunk.js.map": "/ecommerce-react-tailwind/static/js/787.5f6246a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1965784e.css",
-    "static/js/main.64c4ee0f.js"
+    "static/css/main.35e8823a.css",
+    "static/js/main.c11f13df.js"
   ]
 }
