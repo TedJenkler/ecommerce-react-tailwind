@@ -13,11 +13,12 @@ const CheckOut = () => {
         dispatch({type: 'changeenumber', payload: ""})
         dispatch({type: 'changepin', payload: ""})
     }
-    return (<section className="bg-greywhite">
+    return (<section className="bg-greywhite lg:flex lg:justify-center lg:items-start lg:gap-8">
+    <div>
     <BackBtn />
     <Conformation toggle={toggle} />
     <div className={toggle === false ? "blur-sm bg-bordergrey flex items-center justify-center" : "flex items-center justify-center"}>
-        <form className="flex flex-col w-11/12 p-6 bg-white rounded-lg mb-8">
+        <form className="flex flex-col w-11/12 p-6 bg-white rounded-lg mb-8 lg:w-full">
             <h1 className="text-3xl font-bold mb-8">CHECKOUT</h1>
             {/* Personal Info Part*/}
             <p className="text-darkorange text-sm mb-4">Billing details</p>
@@ -107,6 +108,7 @@ const CheckOut = () => {
                 </div>
             </div>
         </form>
+    </div>
     </div>
         <Summary toggle={toggle} setToggle={setToggle} />
         </section>)

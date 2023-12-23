@@ -90,7 +90,7 @@ const Summary = ( {toggle, setToggle} ) => {
     }
     return (
     <div className={toggle === false ? "blur-sm bg-bordergrey flex justify-center" : "flex justify-center"}>
-        <section className="w-11/12 bg-white p-6 rounded-lg mb-24">
+        <section className="w-11/12 bg-white p-6 rounded-lg mb-24 lg:mt-16 lg:w-80">
             <h1 className="font-bold mb-8">SUMMARY</h1>
             {render()}
             <div className="flex mb-2 justify-between">

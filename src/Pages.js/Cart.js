@@ -28,7 +28,7 @@ const Cart = () => {
     }
 
     return (
-        <section className={state.togglecart === true ? "hidden bg-white py-8 px-7 w-11/12 rounded-lg absolute" : "bg-white py-8 px-7 w-11/12 rounded-lg absolute mx-auto left-0 right-0 top-28 z-50 md:w-96 md:right-3 md:left-auto md:mx-0 md:mr-3 md:top-28"}>
+        <section className={state.togglecart === true ? "hidden bg-white py-8 px-7 w-11/12 rounded-lg absolute" : "bg-white py-8 px-7 w-11/12 rounded-lg absolute mx-auto left-0 right-0 top-28 z-50 md:w-96 md:right-3 md:left-auto md:mx-0 md:mr-3 md:top-28 lg:top-36 lg:right-40"}>
             <div className="flex justify-between mb-8">
                 <div className="flex items-center">
                     <h1 className="text-lg font-bold">CART</h1><h1 className="text-lg font-bold">({state.amount})</h1>
