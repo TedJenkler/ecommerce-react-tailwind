@@ -13,12 +13,12 @@ const HomePage = () => {
     const [state, dispatch] = useContext(Context)
     return (
         <div className={state.togglecart  === false ? "blur-sm brightness-50 bg-bordergrey h-screen overflow-hidden" : state.togglemenu === false ? "blur-sm bg-bordergrey h-screen overflow-hidden" : null}>
-        <header className="bg-black1 hero mb-10 bg-bottom bg-no-repeat md:bg-bottom lg:bg-[bottom_right_8rem] lg:mb-32">
-            <div className="text-white text-center py-28 lg:w-1/2 lg:text-start lg:pb-40">
-                <h2 className="mb-4 text-bordergrey text-sm tracking-[10px] lg:text-start lg:px-20">NEW PRODUCT</h2>
-                <h1 className="mb-6 text-4xl tracking-widest md:px-52 lg:px-20 lg:text-start">XX99 Mark II HEADPHONES</h1>
-                <p className="mb-7 text-base px-8 text-white/75 md:px-52 lg:px-20 lg:text-start">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
-                <Link to="/XX99_MARK_ll" className="text-sm py-3 px-8 bg-darkorange hover:bg-lightorange lg:mx-20">See Product</Link>
+        <header className="bg-black1 hero mb-10 bg-bottom bg-no-repeat md:bg-bottom lg:bg-[bottom_right_8rem] lg:mb-32 lg:flex lg:justify-center xl:bg-[bottom_right_20rem]">
+            <div className="text-white text-center py-28 lg:text-start lg:pb-40 lg:w-3/4">
+                <h2 className="mb-4 text-bordergrey text-sm tracking-[10px] lg:text-start lg:px-0 ">NEW PRODUCT</h2>
+                <h1 className="mb-6 text-4xl tracking-widest md:px-52 lg:px-0 lg:text-start lg:pr-96 xl:pr-96 xl:mr-96">XX99 Mark II HEADPHONES</h1>
+                <p className="mb-7 text-base px-8 text-white/75 md:px-52 lg:px-0 lg:text-start lg:pr-96 xl:mr-96">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
+                <Link to="/XX99_MARK_ll" className="text-sm py-3 px-8 bg-darkorange hover:bg-lightorange lg:mx-0">See Product</Link>
             </div>
         </header>
         <main className="lg:flex lg:flex-col lg:items-center">

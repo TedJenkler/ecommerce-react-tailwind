@@ -40,10 +40,10 @@ const XX59 = () => {
             p3="More than a simple pair of headphones, this headset features a pair of built-in microphones for clear, hands-free calling when paired with a compatible smartphone. Controlling music and calls is also intuitive thanks to easy-access touch buttons on the earcups. Regardless of how you use the  XX59 headphones, you can do so all day thanks to an impressive 30-hour battery life that can be rapidly recharged via USB-C."
             b1="Headphone Unit" b2="Replacement Earcups" b3="User Manual" b4="3.5mm 5m Audio Cable" b5="" newp={newP}
             nr1="1x" nr2="2x" nr3="1x" nr4="1x" nr5="" />
-            <div className="flex flex-col items-center lg:mx-0">
+            <div className="flex flex-col items-center lg:mx-0 lg:w-3/4 lg:justify-center">
                 <ImgGroup img1={woman} img2={bookandheadphones} img3={lightheadphones} alt1="hangingheadphones" alt2="thingsonfloor" alt3="glowingheadphones" />
             </div>
-            <div className="flex flex-col items-center md:mb-32">
+            <div className="flex flex-col items-center md:mb-32 lg:w-3/4 lg:justify-center">
                 <Suggestion link1="/XX99_MARK_ll" link2="/XX99_MARK_l" link3="/zx9" img1={suggestionxx99} alt1="xx99mark2" h21="XX99 MARK II" img2={suggestionxx99mark1} alt2="XX99" h22="XX99 MARK I" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
             </div>
             <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4 lg:mb-40 lg:w-3/4 lg:gap-8">

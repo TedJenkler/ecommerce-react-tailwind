@@ -39,10 +39,10 @@ const XX99_MARK_ll = () => {
             p2="Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat."           p3="The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic." 
             b1="Headphone Unit" b2="Replacement Earcups" b3="User Manual" b4="3.5mm 5m Audio Cable" b5="Travel Bag" newp={newP} 
             nr1="1x" nr2="2x" nr3="1x" nr4="1x" nr5="1x"/>
-            <div className="flex flex-col items-center md:mx-10 lg:mx-0">
+            <div className="flex flex-col items-center md:mx-10 lg:mx-0 lg:w-3/4 lg:justify-center">
                 <ImgGroup img1={man} img2={itemstable} img3={headphoneclose} alt1="manwithheadphones" alt2="thingsontable" alt3="headphones close" />
             </div>
-            <div className="flex flex-col items-center md:mb-32">
+            <div className="flex flex-col items-center md:mb-32 lg:w-3/4 lg:justify-center">
                 <Suggestion link1="/XX99_MARK_l" link2="/xx59" link3="/zx9" img1={suggestionxx99} alt1="xx99mark1" h21="XX99 MARK I" img2={suggestionxx59} alt2="XX59" h22="XX59" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
             </div>
             <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4 md:mb-24 lg:mb-40 lg:w-3/4 lg:gap-8">

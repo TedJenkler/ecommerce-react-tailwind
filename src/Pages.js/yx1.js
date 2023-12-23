@@ -40,10 +40,10 @@ const YX1 = () => {
             p3="The YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black." 
             b1="Earphone Unit" b2="Multi-size Earplugs" b3="User Manual" b4="USB-C Charging Cable" b5="Travel Pouch" newp={newP}
             nr1="2x" nr2="6x" nr3="1x" nr4="1x" nr5="1x" />
-            <div className="flex flex-col items-center lg:w-3/4">
+            <div className="flex flex-col items-center lg:w-3/4 lg:justify-center">
                 <ImgGroup img1={earphonelose} img2={chargingearphones} img3={earphonecase} alt1="closespeaker" alt2="livingroom" alt3="twospeakers" />
             </div>
-            <div className="flex flex-col items-center md:mb-32 lg:mx-0 lg:w-3/4">
+            <div className="flex flex-col items-center md:mb-32 lg:mx-0 lg:w-3/4 lg:justify-center ">
                 <Suggestion link1="/xx99_MARK_l" link2="/XX59" link3="/zx9"  img1={suggestionxx99} alt1="XX99 MARK I" h21="XX99 MARK I" img2={suggestionxx59} alt2="XX59" h22="XX59" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
             </div>
             <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4 lg:mb-40 lg:w-3/4 lg:gap-8">

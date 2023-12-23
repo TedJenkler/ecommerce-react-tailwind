@@ -40,10 +40,10 @@ const XX99_MARK_l = () => {
             p3="From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is included with a balanced gold connector."
             b1="Headphone Unit" b2="Replacement Earcups" b3="User Manual" b4="3.5mm 5m Audio Cable" b5="" newp={newP} 
             nr1="1x" nr2="2x" nr3="1x" nr4="1x" nr5="" />
-            <div className="flex flex-col items-center lg:mx-0">
+            <div className="flex flex-col items-center lg:mx-0 lg:w-3/4 lg:justify-center">
                 <ImgGroup img1={hangingheadphone} img2={itemsonfloor} img3={glowingheadphones} alt1="hangingheadphones" alt2="thingsonfloor" alt3="glowingheadphones" />
             </div>
-            <div className="flex flex-col items-center md:mb-32">
+            <div className="flex flex-col items-center md:mb-32 lg:w-3/4 lg:justify-center">
                 <Suggestion link1="/XX99_MARK_ll" link2="/xx59" link3="/zx9" img1={suggestionxx99} alt1="xx99mark2" h21="XX99 MARK II" img2={suggestionxx59} alt2="XX59" h22="XX59" img3={suggestionzx9} alt3="ZX9 SPEAKER" h23="ZX9 SPEAKER" />
             </div>
             <section className="flex flex-col items-center mb-32 md:flex-row md:gap-2 md:mx-4 md:mb-32 lg:mb-40 lg:w-3/4 lg:gap-8">
