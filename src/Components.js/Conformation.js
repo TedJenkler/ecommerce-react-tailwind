@@ -32,7 +32,7 @@ const Conformation = ( {toggle} ) => {
                         </div>
                         </div>
                     </div>
-                    {state.amount > 1 ? <div className="flex text-center bg-greywhite pb-6 pt-3 md:pb-9 md:rounded-bl-lg"><p className="w-full text-bordergrey">and {state.amount - 1} other item{state.amount > 2 ? "(s)" : null}</p></div> : null}
+                    {state.amount > 1 ? <div className="flex text-center bg-greywhite pb-6 pt-3 md:pb-9 md:rounded-bl-lg md:py-9"><p className="w-full text-bordergrey">and {state.amount - 1} other item{state.amount > 2 ? "(s)" : null}</p></div> : <div className="flex text-center bg-greywhite pb-6 pt-3 md:pb-9 md:rounded-bl-lg md:py-14"><p className="w-full text-bordergrey"></p></div>}
                 </div>
                 <div className="bg-black2 pt-4 px-6 pb-5 mb-6 rounded-b-lg md:rounded-r-lg md:rounded-l-none md:h-52 md:flex md:flex-col md:justify-center md:w-1/2 lg:w-1/3">
                     <h1 className="text-bordergrey text-base mb-2">GRAND TOTAL</h1>

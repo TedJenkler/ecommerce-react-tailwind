@@ -10,7 +10,7 @@ const ProductLink = ( {img, h11, h12, p, path, isNew, way, mway} ) => {
             <h2 className="text-darkorange tracking-[10px] mb-6 md:mb-4">{isNew === true ? "NEW PRODUCT" : "" }</h2>
             <h1 className="m-0 text-3xl font-bold">{h11}</h1>
             <h1 className="mb-6 text-3xl font-bold">{h12}</h1>
-            <p className="text-base mb-6 text-bordergrey">{p}</p>
+            <p className="text-base mb-6 text-bordergrey md:px-10">{p}</p>
             <Link to={path} className="text-sm text-white py-3 px-8 bg-darkorange hover:bg-lightorange">SEE PRODUCT</Link>
             </div>
         </section>

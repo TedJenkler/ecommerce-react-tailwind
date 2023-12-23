@@ -6,18 +6,6 @@
   background-image: url(./Img/Bitmap.png);
 }
 
-.circlebg {
-  background-image: url(./Img/circle-bg.png);
-}
-
-.mdcirclebg {
-  background-image: url(./Img/orangecirclebg-tablet.png);
-}
-
-.speakerbg {
-  background-image: url(./Img/speaker-bg.png)
-}
-
 .error {
   color: red;
 }

@@ -28,25 +28,25 @@ const HomePage = () => {
                 <LinkItem img={earphones} h2="EARPHONES" link={"/earphones"} />
             </section>
             <div className="flex flex-col items-center">
-            <section className="bg-darkorange w-11/12 flex flex-col items-center text-center pt-12 rounded-lg pb-14 mb-6 circlebg bg-top bg-no-repeat lg:flex-row lg:w-3/4">
+            <section className="bg-darkorange w-11/12 flex flex-col items-center text-center pt-12 rounded-lg pb-14 mb-6 bg-mobile-orangecircle bg-top bg-no-repeat md:bg-tablet-orangecircle lg:flex-row lg:w-3/4">
                 <img className="mb-8 lg:w-1/2" src={speakerx200} alt="speaker" />
                 <div className="lg:w-1/2">
                     <h1 className="mb-6 text-4xl text-white">ZX9 <br/> SPEAKER</h1>
-                    <p className="mb-6 mx-6 text-white/75 text-base md:mx-52">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
+                    <p className="mb-6 mx-6 text-white/75 text-base md:mx-52 md:mb-10">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
                     <Link to="/zx9" className="py-3 px-8 text-white bg-black2 hover:bg-hoverblack">SEE PRODUCT</Link>
                 </div>
             </section>
             </div>
             <div className="flex flex-col items-center">
-                <section className="py-24 bg-greywhite w-11/12 speakerbg bg-right bg-no-repeat bg-cover mb-6">
+                <section className="py-24 rounded-lg bg-greywhite w-11/12 bg-mobile-speaker bg-right bg-no-repeat bg-cover mb-6 md:bg-tablet-speaker">
                     <h1 className="ml-6 mb-8 text-3xl">ZX7 SPEAKER</h1>
                     <Link to="/zx7" className="ml-6 border-black2 border py-3 px-8 hover:bg-black2 hover:text-white">SEE PRODUCT</Link>
                 </section>
             </div>
             <div className="flex flex-col items-center">
-                <section className="w-11/12 mb-32">
-                    <img className="w-full mb-6" src={earphoneimg} alt="Earphones" />
-                    <div className="bg-greywhite py-10">
+                <section className="w-11/12 mb-32 md:flex">
+                    <img className="w-full mb-6 md:w-1/2 md:h-80 md:object-cover rounded-lg" src={earphoneimg} alt="Earphones" />
+                    <div className="bg-greywhite py-10 md:h-80 md:ml-3 rounded-lg md:w-1/2 md:flex md:flex-col md:items-start md:justify-center">
                         <h1 className="ml-6 mb-8 text-3xl">YX1 EARPHONES</h1>
                         <Link to="/yx1" className="ml-6 border-black2 border py-3 px-8 hover:bg-black2 hover:text-white">SEE PRODUCT</Link>
                     </div>

@@ -16,6 +16,12 @@ module.exports = {
       'hoverblack': '#4C4C4C',
     },
     extend: {
+      backgroundImage: {
+        'mobile-orangecircle': "url('./Img/circle-bg.png')",
+        'mobile-speaker': "url('./Img/speaker-bg.png')",
+        'tablet-speaker': "url('./Img/tabletspeaker-bg.png')",
+        'tablet-orangecircle': "url('./Img/tabletorangecirclebg.png')",
+      }
     },
   },
   plugins: [],
