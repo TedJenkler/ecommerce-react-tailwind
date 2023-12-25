@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecommerce-react-tailwind/static/css/main.b1e9797e.css",
-    "main.js": "/ecommerce-react-tailwind/static/js/main.433077fb.js",
+    "main.css": "/ecommerce-react-tailwind/static/css/main.bcbb8581.css",
+    "main.js": "/ecommerce-react-tailwind/static/js/main.b33dc9db.js",
     "static/js/787.5f6246a1.chunk.js": "/ecommerce-react-tailwind/static/js/787.5f6246a1.chunk.js",
     "static/media/tabletspeaker-bg.png": "/ecommerce-react-tailwind/static/media/tabletspeaker-bg.4e8af4accbe8a6f63b9c.png",
     "static/media/earphonecase.png": "/ecommerce-react-tailwind/static/media/earphonecase.e689806dbacf3bb6ef92.png",
@@ -48,17 +48,17 @@
     "static/media/audiophile 2.svg": "/ecommerce-react-tailwind/static/media/audiophile 2.97908ae386e8da7eefd18d9fa82e68ed.svg",
     "static/media/Combined Shape 2.svg": "/ecommerce-react-tailwind/static/media/Combined Shape 2.c91e8f77d2bbc6d505876f473ef7fd2c.svg",
     "static/media/instagram.svg": "/ecommerce-react-tailwind/static/media/instagram.df088038fc963e5175c2dcea9142ce08.svg",
-    "static/media/twitter.svg": "/ecommerce-react-tailwind/static/media/twitter.093f0d3b876df7d46e45141f72ae6380.svg",
     "index.html": "/ecommerce-react-tailwind/index.html",
+    "static/media/twitter.svg": "/ecommerce-react-tailwind/static/media/twitter.093f0d3b876df7d46e45141f72ae6380.svg",
     "static/media/facebook.svg": "/ecommerce-react-tailwind/static/media/facebook.c819042face097d5d931fae085dedfbe.svg",
     "static/media/Group.svg": "/ecommerce-react-tailwind/static/media/Group.e1ba3e8155d63f744df2abf92a4b4efb.svg",
     "static/media/orangearrow.svg": "/ecommerce-react-tailwind/static/media/orangearrow.aefddf297740fe9b50fc97d86c1332ea.svg",
-    "main.b1e9797e.css.map": "/ecommerce-react-tailwind/static/css/main.b1e9797e.css.map",
-    "main.433077fb.js.map": "/ecommerce-react-tailwind/static/js/main.433077fb.js.map",
+    "main.bcbb8581.css.map": "/ecommerce-react-tailwind/static/css/main.bcbb8581.css.map",
+    "main.b33dc9db.js.map": "/ecommerce-react-tailwind/static/js/main.b33dc9db.js.map",
     "787.5f6246a1.chunk.js.map": "/ecommerce-react-tailwind/static/js/787.5f6246a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1e9797e.css",
-    "static/js/main.433077fb.js"
+    "static/css/main.bcbb8581.css",
+    "static/js/main.b33dc9db.js"
   ]
 }
