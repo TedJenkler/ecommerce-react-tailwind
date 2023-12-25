@@ -13,3 +13,7 @@
 .errorborder {
   border-color: red;
 }
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
